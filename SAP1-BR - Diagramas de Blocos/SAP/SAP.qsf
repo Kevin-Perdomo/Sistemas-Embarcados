@@ -1,0 +1,93 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2020  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+# Date created = 19:52:52  August 17, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		SAP_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M50DAF484C7G
+set_global_assignment -name TOP_LEVEL_ENTITY SAP
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:52:52  AUGUST 17, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name BDF_FILE SAP.bdf
+set_global_assignment -name BDF_FILE Adder_Subtractor.bdf
+set_global_assignment -name BDF_FILE Half_Adder.bdf
+set_global_assignment -name BDF_FILE DM74LS139.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE DM74LS139.vwf
+set_global_assignment -name BDF_FILE CI_74LS157.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CI_74LS157.vwf
+set_global_assignment -name BDF_FILE DM74LS153.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE DM74LS153.vwf
+set_global_assignment -name BDF_FILE DM74LS163A.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE DM74LS163A.vwf
+set_global_assignment -name BDF_FILE DM74LS283.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE DM74LS283.vwf
+set_global_assignment -name BDF_FILE "CI_74F189-RAM.bdf"
+set_global_assignment -name BDF_FILE CI_74LS173A.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CI_74LS173A.vwf
+set_global_assignment -name BDF_FILE DM74LS245.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE DM74LS245.vwf
+set_global_assignment -name BDF_FILE RAM_CELL_74F189.bdf
+set_global_assignment -name BDF_FILE RAM_74F189.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE RAM_CELL_74F189.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE RAM_74F189.vwf
+set_global_assignment -name BDF_FILE Program_Counter.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Program_Counter.vwf
+set_global_assignment -name BDF_FILE octal_buffer_tri_state.bdf
+set_global_assignment -name BDF_FILE Registrador_A.bdf
+set_global_assignment -name BDF_FILE ULA.bdf
+set_global_assignment -name BDF_FILE CI74244_BUFFER_TRISTATE_UNIDIRECIONAL.bdf
+set_global_assignment -name BDF_FILE Registrador_B.bdf
+set_global_assignment -name BDF_FILE REGISTRADOR_MAR.bdf
+set_global_assignment -name BDF_FILE CI74F189_CELL.bdf
+set_global_assignment -name BDF_FILE CI74F189_BIGGER_CELL.bdf
+set_global_assignment -name BDF_FILE CI74F189_DECODIFICADOR.bdf
+set_global_assignment -name BDF_FILE MEMORIA_RAM.bdf
+set_global_assignment -name BDF_FILE MEMORIA_RAM_COMPLETA.bdf
+set_global_assignment -name BDF_FILE REGISTRADOR_DE_INSTRUCOES.bdf
+set_global_assignment -name BDF_FILE Clock_Controller.bdf
+set_global_assignment -name BDF_FILE CONTROLLER.bdf
+set_global_assignment -name BDF_FILE CONTADOR_EM_ANEL.bdf
+set_global_assignment -name BDF_FILE REGISTRADOR_DE_SAIDA.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
