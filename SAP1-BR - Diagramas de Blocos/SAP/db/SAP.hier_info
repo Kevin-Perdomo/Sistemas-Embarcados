@@ -2,9 +2,8 @@
 LED0 <= REGISTRADOR_DE_SAIDA:inst5.Q0
 ALU <= CONTROLLER:inst98.ALU
 dal7 => MEMORIA_RAM_COMPLETA:inst2.dal7
-PROGRAM_RUN_n => REGISTRADOR_MAR:inst6.programm_run_n
+PROGRAM_RUN_n => inst1.IN0
 PROGRAM_RUN_n => MEMORIA_RAM_COMPLETA:inst2.programm_run
-PC_OUT <= CONTROLLER:inst98.PC_OUT
 AUTO => Clock_Controller:inst.AUTO
 SEC => Clock_Controller:inst.SEC
 MAN => Clock_Controller:inst.MAN
@@ -18,6 +17,7 @@ RESET => REGISTRADOR_MAR:inst6.RESET
 RESET => REGISTRADOR_DE_INSTRUCOES:inst7.RESET
 RESET => CONTROLLER:inst98.CLR
 RESET => REGISTRADOR_DE_SAIDA:inst5.RESET
+PC_OUT <= CONTROLLER:inst98.PC_OUT
 mar_dip3 => REGISTRADOR_MAR:inst6.mar_dip3
 mar_dip2 => REGISTRADOR_MAR:inst6.mar_dip2
 MAI <= CONTROLLER:inst98.MAI
@@ -2634,66 +2634,66 @@ Q3 <= inst99.DB_MAX_OUTPUT_PORT_TYPE
 D3 => inst9.IN1
 
 
-|SAP|Program_Counter:inst10
-A0 <= octal_buffer_tri_state:inst3.S0
-PC_OUT => octal_buffer_tri_state:inst3.EN
-CLOCK => DM74LS163A:inst5.CLOCK
-A => DM74LS163A:inst5.DATA_A
-RESET => DM74LS163A:inst5.CLEAR
-B => DM74LS163A:inst5.DATA_B
-JUMP => DM74LS163A:inst5.LOAD
-PC_INC => DM74LS163A:inst5.ENABLE_P
-PC_INC => DM74LS163A:inst5.ENABLE_T
-C => DM74LS163A:inst5.DATA_C
-D => DM74LS163A:inst5.DATA_D
-A1 <= octal_buffer_tri_state:inst3.S1
-A2 <= octal_buffer_tri_state:inst3.S2
-A3 <= octal_buffer_tri_state:inst3.S3
-A4 <= octal_buffer_tri_state:inst3.S4
-A5 <= octal_buffer_tri_state:inst3.S5
-A6 <= octal_buffer_tri_state:inst3.S6
-A7 <= octal_buffer_tri_state:inst3.S7
+|SAP|CONTADOR_DE_PROGRAMA:inst3
+A0 <= ENTRADA_TRI_SAIDA:inst1.Y0
+PC_OUT => ENTRADA_TRI_SAIDA:inst1.ENABLE
+CLOCK => CI74LS161:inst.CLOCK
+A => CI74LS161:inst.DATA_A
+RESET => CI74LS161:inst.CLEAR
+B => CI74LS161:inst.DATA_B
+JUMP => CI74LS161:inst.LOAD
+PC_INC => CI74LS161:inst.ENABLE_P
+PC_INC => CI74LS161:inst.ENABLE_T
+C => CI74LS161:inst.DATA_C
+D => CI74LS161:inst.DATA_D
+A1 <= ENTRADA_TRI_SAIDA:inst1.Y1
+A2 <= ENTRADA_TRI_SAIDA:inst1.Y2
+A3 <= ENTRADA_TRI_SAIDA:inst1.Y3
+A4 <= ENTRADA_TRI_SAIDA:inst1.Y4
+A5 <= ENTRADA_TRI_SAIDA:inst1.Y5
+A6 <= ENTRADA_TRI_SAIDA:inst1.Y6
+A7 <= ENTRADA_TRI_SAIDA:inst1.Y7
 
 
-|SAP|Program_Counter:inst10|octal_buffer_tri_state:inst3
-S0 <= inst58.DB_MAX_OUTPUT_PORT_TYPE
-A0 => inst58.DATAIN
-EN => inst.IN0
-S1 <= inst59.DB_MAX_OUTPUT_PORT_TYPE
-A1 => inst59.DATAIN
-S2 <= inst60.DB_MAX_OUTPUT_PORT_TYPE
-A2 => inst60.DATAIN
-S4 <= inst62.DB_MAX_OUTPUT_PORT_TYPE
-A4 => inst62.DATAIN
-S5 <= inst63.DB_MAX_OUTPUT_PORT_TYPE
-A5 => inst63.DATAIN
-S6 <= inst64.DB_MAX_OUTPUT_PORT_TYPE
-A6 => inst64.DATAIN
-S7 <= inst65.DB_MAX_OUTPUT_PORT_TYPE
-A7 => inst65.DATAIN
-S3 <= inst61.DB_MAX_OUTPUT_PORT_TYPE
-A3 => inst61.DATAIN
+|SAP|CONTADOR_DE_PROGRAMA:inst3|ENTRADA_TRI_SAIDA:inst1
+Y7 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A7 => inst.DATAIN
+ENABLE => inst8.IN0
+Y6 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A6 => inst1.DATAIN
+Y5 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A5 => inst2.DATAIN
+Y4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A4 => inst3.DATAIN
+Y3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A3 => inst4.DATAIN
+Y2 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst5.DATAIN
+Y1 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst6.DATAIN
+Y0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst7.DATAIN
 
 
-|SAP|Program_Counter:inst10|DM74LS163A:inst5
-QA <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LOAD => inst44.IN0
-CLEAR => inst44.IN1
-CLEAR => inst48.IN1
-CLEAR => inst50.IN1
-CLEAR => inst52.IN1
-CLEAR => inst58.IN1
-ENABLE_P => inst45.IN0
-ENABLE_T => inst46.IN0
-DATA_A => inst48.IN0
-CLOCK => inst102A.IN0
-QB <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-DATA_B => inst50.IN0
-QC <= inst15.DB_MAX_OUTPUT_PORT_TYPE
-DATA_C => inst52.IN0
-QD <= inst19.DB_MAX_OUTPUT_PORT_TYPE
-DATA_D => inst58.IN0
-RCO <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+|SAP|CONTADOR_DE_PROGRAMA:inst3|CI74LS161:inst
+QA <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+LOAD => inst34.IN0
+CLEAR => inst34.IN1
+CLEAR => inst5.IN1
+CLEAR => inst7.IN1
+CLEAR => inst10.IN1
+CLEAR => inst9.IN1
+ENABLE_P => inst30.IN0
+ENABLE_T => inst31.IN0
+DATA_A => inst5.IN0
+CLOCK => inst29.IN0
+QB <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+DATA_B => inst7.IN0
+QC <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+DATA_C => inst10.IN0
+QD <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+DATA_D => inst9.IN0
+Carry_out <= inst36.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |SAP|Registrador_A:inst9
