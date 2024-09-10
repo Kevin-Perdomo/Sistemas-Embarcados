@@ -1,5 +1,5 @@
 Assembler report for SAP
-Mon Sep 09 23:06:53 2024
+Sun Sep 08 21:25:35 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/output_files/SAP.sof
+  5. Assembler Device Options: C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/output_files/SAP.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Sep 09 23:06:53 2024 ;
+; Assembler Status      ; Successful - Sun Sep 08 21:25:35 2024 ;
 ; Revision Name         ; SAP                                   ;
 ; Top-level Entity Name ; SAP                                   ;
 ; Family                ; MAX 10                                ;
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                           ;
-+-----------------------------------------------------------------------------------------------------+
-; File Name                                                                                           ;
-+-----------------------------------------------------------------------------------------------------+
-; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/output_files/SAP.sof ;
-+-----------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------+
+; Assembler Generated Files                                               ;
++-------------------------------------------------------------------------+
+; File Name                                                               ;
++-------------------------------------------------------------------------+
+; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/output_files/SAP.sof ;
++-------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/output_files/SAP.sof ;
-+----------------+--------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                      ;
-+----------------+--------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x002C4FBF                                                                                                   ;
-; Checksum       ; 0x002C4FBF                                                                                                   ;
-+----------------+--------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/output_files/SAP.sof ;
++----------------+----------------------------------------------------------------------------------+
+; Option         ; Setting                                                                          ;
++----------------+----------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x002C156E                                                                       ;
+; Checksum       ; 0x002C156E                                                                       ;
++----------------+----------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,15 +78,15 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Sep 09 23:06:49 2024
+    Info: Processing started: Sun Sep 08 21:25:31 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off SAP -c SAP
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4689 megabytes
-    Info: Processing ended: Mon Sep 09 23:06:53 2024
+    Info: Peak virtual memory: 4690 megabytes
+    Info: Processing ended: Sun Sep 08 21:25:35 2024
     Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
 
 

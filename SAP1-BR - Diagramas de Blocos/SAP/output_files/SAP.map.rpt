@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SAP
-Mon Sep 09 23:06:14 2024
+Sun Sep 08 21:24:55 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,13 +43,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Sep 09 23:06:14 2024       ;
+; Analysis & Synthesis Status        ; Successful - Sun Sep 08 21:24:55 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; SAP                                         ;
 ; Top-level Entity Name              ; SAP                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 544                                         ;
-;     Total combinational functions  ; 393                                         ;
+; Total logic elements               ; 543                                         ;
+;     Total combinational functions  ; 392                                         ;
 ;     Dedicated logic registers      ; 173                                         ;
 ; Total registers                    ; 173                                         ;
 ; Total pins                         ; 48                                          ;
@@ -165,35 +165,35 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                ;
-+-------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path          ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                             ; Library ;
-+-------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------+---------+
-; SAP.bdf                                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/SAP.bdf                                   ;         ;
-; CI_74LS157.bdf                            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/CI_74LS157.bdf                            ;         ;
-; DM74LS153.bdf                             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/DM74LS153.bdf                             ;         ;
-; DM74LS163A.bdf                            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/DM74LS163A.bdf                            ;         ;
-; DM74LS283.bdf                             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/DM74LS283.bdf                             ;         ;
-; CI_74LS173A.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/CI_74LS173A.bdf                           ;         ;
-; Program_Counter.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/Program_Counter.bdf                       ;         ;
-; octal_buffer_tri_state.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/octal_buffer_tri_state.bdf                ;         ;
-; Registrador_A.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/Registrador_A.bdf                         ;         ;
-; ULA.bdf                                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/ULA.bdf                                   ;         ;
-; CI74244_BUFFER_TRISTATE_UNIDIRECIONAL.bdf ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/CI74244_BUFFER_TRISTATE_UNIDIRECIONAL.bdf ;         ;
-; Registrador_B.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/Registrador_B.bdf                         ;         ;
-; REGISTRADOR_MAR.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/REGISTRADOR_MAR.bdf                       ;         ;
-; CI74F189_CELL.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/CI74F189_CELL.bdf                         ;         ;
-; CI74F189_BIGGER_CELL.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/CI74F189_BIGGER_CELL.bdf                  ;         ;
-; CI74F189_DECODIFICADOR.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/CI74F189_DECODIFICADOR.bdf                ;         ;
-; MEMORIA_RAM.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/MEMORIA_RAM.bdf                           ;         ;
-; MEMORIA_RAM_COMPLETA.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/MEMORIA_RAM_COMPLETA.bdf                  ;         ;
-; REGISTRADOR_DE_INSTRUCOES.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/REGISTRADOR_DE_INSTRUCOES.bdf             ;         ;
-; Clock_Controller.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/Clock_Controller.bdf                      ;         ;
-; CONTROLLER.bdf                            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/CONTROLLER.bdf                            ;         ;
-; CONTADOR_EM_ANEL.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/CONTADOR_EM_ANEL.bdf                      ;         ;
-; REGISTRADOR_DE_SAIDA.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/REGISTRADOR_DE_SAIDA.bdf                  ;         ;
-+-------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                    ;
++-------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                 ; Library ;
++-------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------+---------+
+; SAP.bdf                                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/SAP.bdf                                   ;         ;
+; CI_74LS157.bdf                            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/CI_74LS157.bdf                            ;         ;
+; DM74LS153.bdf                             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/DM74LS153.bdf                             ;         ;
+; DM74LS163A.bdf                            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/DM74LS163A.bdf                            ;         ;
+; DM74LS283.bdf                             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/DM74LS283.bdf                             ;         ;
+; CI_74LS173A.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/CI_74LS173A.bdf                           ;         ;
+; Program_Counter.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/Program_Counter.bdf                       ;         ;
+; octal_buffer_tri_state.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/octal_buffer_tri_state.bdf                ;         ;
+; Registrador_A.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/Registrador_A.bdf                         ;         ;
+; ULA.bdf                                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/ULA.bdf                                   ;         ;
+; CI74244_BUFFER_TRISTATE_UNIDIRECIONAL.bdf ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/CI74244_BUFFER_TRISTATE_UNIDIRECIONAL.bdf ;         ;
+; Registrador_B.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/Registrador_B.bdf                         ;         ;
+; REGISTRADOR_MAR.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/REGISTRADOR_MAR.bdf                       ;         ;
+; CI74F189_CELL.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/CI74F189_CELL.bdf                         ;         ;
+; CI74F189_BIGGER_CELL.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/CI74F189_BIGGER_CELL.bdf                  ;         ;
+; CI74F189_DECODIFICADOR.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/CI74F189_DECODIFICADOR.bdf                ;         ;
+; MEMORIA_RAM.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/MEMORIA_RAM.bdf                           ;         ;
+; MEMORIA_RAM_COMPLETA.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/MEMORIA_RAM_COMPLETA.bdf                  ;         ;
+; REGISTRADOR_DE_INSTRUCOES.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/REGISTRADOR_DE_INSTRUCOES.bdf             ;         ;
+; Clock_Controller.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/Clock_Controller.bdf                      ;         ;
+; CONTROLLER.bdf                            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/CONTROLLER.bdf                            ;         ;
+; CONTADOR_EM_ANEL.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/CONTADOR_EM_ANEL.bdf                      ;         ;
+; REGISTRADOR_DE_SAIDA.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas Distribuidos/SAP/REGISTRADOR_DE_SAIDA.bdf                  ;         ;
++-------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------------------------+
@@ -201,16 +201,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------------------------+
 ; Resource                                    ; Usage                            ;
 +---------------------------------------------+----------------------------------+
-; Estimated Total logic elements              ; 544                              ;
+; Estimated Total logic elements              ; 543                              ;
 ;                                             ;                                  ;
-; Total combinational functions               ; 393                              ;
+; Total combinational functions               ; 392                              ;
 ; Logic element usage by number of LUT inputs ;                                  ;
-;     -- 4 input functions                    ; 199                              ;
-;     -- 3 input functions                    ; 36                               ;
-;     -- <=2 input functions                  ; 158                              ;
+;     -- 4 input functions                    ; 200                              ;
+;     -- 3 input functions                    ; 35                               ;
+;     -- <=2 input functions                  ; 157                              ;
 ;                                             ;                                  ;
 ; Logic elements by mode                      ;                                  ;
-;     -- normal mode                          ; 393                              ;
+;     -- normal mode                          ; 392                              ;
 ;     -- arithmetic mode                      ; 0                                ;
 ;                                             ;                                  ;
 ; Total registers                             ; 173                              ;
@@ -223,7 +223,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                  ;
 ; Maximum fan-out node                        ; MEMORIA_RAM_COMPLETA:inst2|inst3 ;
 ; Maximum fan-out                             ; 145                              ;
-; Total fan-out                               ; 1705                             ;
+; Total fan-out                               ; 1704                             ;
 ; Average fan-out                             ; 2.58                             ;
 +---------------------------------------------+----------------------------------+
 
@@ -233,16 +233,16 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------+---------------------------------------+--------------+
 ; Compilation Hierarchy Node                          ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                               ; Entity Name                           ; Library Name ;
 +-----------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------+---------------------------------------+--------------+
-; |SAP                                                ; 393 (0)             ; 173 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 48   ; 0            ; 0          ; |SAP                                                                                              ; SAP                                   ; work         ;
+; |SAP                                                ; 392 (0)             ; 173 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 48   ; 0            ; 0          ; |SAP                                                                                              ; SAP                                   ; work         ;
 ;    |CONTROLLER:inst98|                              ; 33 (20)             ; 5 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|CONTROLLER:inst98                                                                            ; CONTROLLER                            ; work         ;
 ;       |CI74F189_DECODIFICADOR:inst|                 ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|CONTROLLER:inst98|CI74F189_DECODIFICADOR:inst                                                ; CI74F189_DECODIFICADOR                ; work         ;
 ;       |CONTADOR_EM_ANEL:inst76|                     ; 2 (2)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|CONTROLLER:inst98|CONTADOR_EM_ANEL:inst76                                                    ; CONTADOR_EM_ANEL                      ; work         ;
-;    |Clock_Controller:inst4|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|Clock_Controller:inst4                                                                       ; Clock_Controller                      ; work         ;
+;    |Clock_Controller:inst|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|Clock_Controller:inst                                                                        ; Clock_Controller                      ; work         ;
 ;    |MEMORIA_RAM_COMPLETA:inst2|                     ; 219 (1)             ; 128 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2                                                                   ; MEMORIA_RAM_COMPLETA                  ; work         ;
-;       |CI74244_BUFFER_TRISTATE_UNIDIRECIONAL:inst7| ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|CI74244_BUFFER_TRISTATE_UNIDIRECIONAL:inst7                       ; CI74244_BUFFER_TRISTATE_UNIDIRECIONAL ; work         ;
+;       |CI74244_BUFFER_TRISTATE_UNIDIRECIONAL:inst7| ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|CI74244_BUFFER_TRISTATE_UNIDIRECIONAL:inst7                       ; CI74244_BUFFER_TRISTATE_UNIDIRECIONAL ; work         ;
 ;       |CI_74LS157:inst8|                            ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|CI_74LS157:inst8                                                  ; CI_74LS157                            ; work         ;
 ;       |CI_74LS157:inst|                             ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|CI_74LS157:inst                                                   ; CI_74LS157                            ; work         ;
-;       |MEMORIA_RAM:inst2|                           ; 206 (0)             ; 128 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|MEMORIA_RAM:inst2                                                 ; MEMORIA_RAM                           ; work         ;
+;       |MEMORIA_RAM:inst2|                           ; 204 (0)             ; 128 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|MEMORIA_RAM:inst2                                                 ; MEMORIA_RAM                           ; work         ;
 ;          |CI74F189_BIGGER_CELL:inst10|              ; 9 (0)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|MEMORIA_RAM:inst2|CI74F189_BIGGER_CELL:inst10                     ; CI74F189_BIGGER_CELL                  ; work         ;
 ;             |CI74F189_CELL:inst2|                   ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|MEMORIA_RAM:inst2|CI74F189_BIGGER_CELL:inst10|CI74F189_CELL:inst2 ; CI74F189_CELL                         ; work         ;
 ;             |CI74F189_CELL:inst3|                   ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|MEMORIA_RAM:inst2|CI74F189_BIGGER_CELL:inst10|CI74F189_CELL:inst3 ; CI74F189_CELL                         ; work         ;
@@ -306,11 +306,11 @@ https://fpgasoftware.intel.com/eula.
 ;             |CI74F189_CELL:inst7|                   ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|MEMORIA_RAM:inst2|CI74F189_BIGGER_CELL:inst16|CI74F189_CELL:inst7 ; CI74F189_CELL                         ; work         ;
 ;             |CI74F189_CELL:inst8|                   ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|MEMORIA_RAM:inst2|CI74F189_BIGGER_CELL:inst16|CI74F189_CELL:inst8 ; CI74F189_CELL                         ; work         ;
 ;             |CI74F189_CELL:inst|                    ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|MEMORIA_RAM:inst2|CI74F189_BIGGER_CELL:inst16|CI74F189_CELL:inst  ; CI74F189_CELL                         ; work         ;
-;          |CI74F189_BIGGER_CELL:inst17|              ; 54 (0)              ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|MEMORIA_RAM:inst2|CI74F189_BIGGER_CELL:inst17                     ; CI74F189_BIGGER_CELL                  ; work         ;
+;          |CI74F189_BIGGER_CELL:inst17|              ; 52 (0)              ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|MEMORIA_RAM:inst2|CI74F189_BIGGER_CELL:inst17                     ; CI74F189_BIGGER_CELL                  ; work         ;
 ;             |CI74F189_CELL:inst2|                   ; 11 (11)             ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|MEMORIA_RAM:inst2|CI74F189_BIGGER_CELL:inst17|CI74F189_CELL:inst2 ; CI74F189_CELL                         ; work         ;
 ;             |CI74F189_CELL:inst3|                   ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|MEMORIA_RAM:inst2|CI74F189_BIGGER_CELL:inst17|CI74F189_CELL:inst3 ; CI74F189_CELL                         ; work         ;
 ;             |CI74F189_CELL:inst4|                   ; 11 (11)             ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|MEMORIA_RAM:inst2|CI74F189_BIGGER_CELL:inst17|CI74F189_CELL:inst4 ; CI74F189_CELL                         ; work         ;
-;             |CI74F189_CELL:inst5|                   ; 11 (11)             ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|MEMORIA_RAM:inst2|CI74F189_BIGGER_CELL:inst17|CI74F189_CELL:inst5 ; CI74F189_CELL                         ; work         ;
+;             |CI74F189_CELL:inst5|                   ; 9 (9)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|MEMORIA_RAM:inst2|CI74F189_BIGGER_CELL:inst17|CI74F189_CELL:inst5 ; CI74F189_CELL                         ; work         ;
 ;             |CI74F189_CELL:inst6|                   ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|MEMORIA_RAM:inst2|CI74F189_BIGGER_CELL:inst17|CI74F189_CELL:inst6 ; CI74F189_CELL                         ; work         ;
 ;             |CI74F189_CELL:inst7|                   ; 6 (6)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|MEMORIA_RAM:inst2|CI74F189_BIGGER_CELL:inst17|CI74F189_CELL:inst7 ; CI74F189_CELL                         ; work         ;
 ;             |CI74F189_CELL:inst8|                   ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|MEMORIA_RAM_COMPLETA:inst2|MEMORIA_RAM:inst2|CI74F189_BIGGER_CELL:inst17|CI74F189_CELL:inst8 ; CI74F189_CELL                         ; work         ;
@@ -407,9 +407,9 @@ https://fpgasoftware.intel.com/eula.
 ;    |Registrador_B:inst8|                            ; 0 (0)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|Registrador_B:inst8                                                                          ; Registrador_B                         ; work         ;
 ;       |CI_74LS173A:inst5|                           ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|Registrador_B:inst8|CI_74LS173A:inst5                                                        ; CI_74LS173A                           ; work         ;
 ;       |CI_74LS173A:inst6|                           ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|Registrador_B:inst8|CI_74LS173A:inst6                                                        ; CI_74LS173A                           ; work         ;
-;    |ULA:inst12|                                     ; 110 (3)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|ULA:inst12                                                                                   ; ULA                                   ; work         ;
+;    |ULA:inst12|                                     ; 109 (3)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|ULA:inst12                                                                                   ; ULA                                   ; work         ;
 ;       |CI74244_BUFFER_TRISTATE_UNIDIRECIONAL:inst6| ; 73 (73)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|ULA:inst12|CI74244_BUFFER_TRISTATE_UNIDIRECIONAL:inst6                                       ; CI74244_BUFFER_TRISTATE_UNIDIRECIONAL ; work         ;
-;       |DM74LS153:inst59|                            ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|ULA:inst12|DM74LS153:inst59                                                                  ; DM74LS153                             ; work         ;
+;       |DM74LS153:inst59|                            ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|ULA:inst12|DM74LS153:inst59                                                                  ; DM74LS153                             ; work         ;
 ;       |DM74LS153:inst60|                            ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|ULA:inst12|DM74LS153:inst60                                                                  ; DM74LS153                             ; work         ;
 ;       |DM74LS153:inst62|                            ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|ULA:inst12|DM74LS153:inst62                                                                  ; DM74LS153                             ; work         ;
 ;       |DM74LS283:inst53|                            ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP|ULA:inst12|DM74LS283:inst53                                                                  ; DM74LS283                             ; work         ;
@@ -445,15 +445,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;     ENA CLR           ; 20                          ;
 ;     SCLR              ; 2                           ;
 ;     plain             ; 130                         ;
-; cycloneiii_lcell_comb ; 404                         ;
-;     normal            ; 404                         ;
+; cycloneiii_lcell_comb ; 403                         ;
+;     normal            ; 403                         ;
 ;         1 data inputs ; 13                          ;
-;         2 data inputs ; 156                         ;
-;         3 data inputs ; 36                          ;
-;         4 data inputs ; 199                         ;
+;         2 data inputs ; 155                         ;
+;         3 data inputs ; 35                          ;
+;         4 data inputs ; 200                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 10.00                       ;
-; Average LUT depth     ; 6.24                        ;
+; Average LUT depth     ; 6.23                        ;
 +-----------------------+-----------------------------+
 
 
@@ -472,7 +472,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Sep 09 23:05:58 2024
+    Info: Processing started: Sun Sep 08 21:24:39 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SAP -c SAP
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -558,7 +558,7 @@ Warning (275011): Block or symbol "GND" of instance "inst5" overlaps another blo
 Info (12128): Elaborating entity "Program_Counter" for hierarchy "Program_Counter:inst10"
 Info (12128): Elaborating entity "DM74LS163A" for hierarchy "Program_Counter:inst10|DM74LS163A:inst5"
 Info (12128): Elaborating entity "Registrador_A" for hierarchy "Registrador_A:inst9"
-Info (12128): Elaborating entity "Clock_Controller" for hierarchy "Clock_Controller:inst4"
+Info (12128): Elaborating entity "Clock_Controller" for hierarchy "Clock_Controller:inst"
 Info (12128): Elaborating entity "Registrador_B" for hierarchy "Registrador_B:inst8"
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "Registrador_B:inst8|CI_74LS173A:inst6|inst96" feeding internal logic into a wire
@@ -578,7 +578,7 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "REGISTRADOR_DE_INSTRUCOES:inst7|CI_74LS173A:inst5|inst98" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "REGISTRADOR_DE_INSTRUCOES:inst7|CI_74LS173A:inst5|inst99" feeding internal logic into a wire
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer Clock_Controller:inst4|inst~0
+    Warning (19017): Found clock multiplexer Clock_Controller:inst|inst~0
     Warning (19017): Found clock multiplexer REGISTRADOR_MAR:inst6|CI_74LS157:inst|inst14~0
     Warning (19017): Found clock multiplexer REGISTRADOR_MAR:inst6|CI_74LS157:inst|inst13~0
     Warning (19017): Found clock multiplexer REGISTRADOR_MAR:inst6|CI_74LS157:inst|inst12~0
@@ -621,14 +621,14 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 608 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 607 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 30 output pins
-    Info (21061): Implemented 560 logic cells
+    Info (21061): Implemented 559 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 60 warnings
-    Info: Peak virtual memory: 4805 megabytes
-    Info: Processing ended: Mon Sep 09 23:06:14 2024
+    Info: Peak virtual memory: 4803 megabytes
+    Info: Processing ended: Sun Sep 08 21:24:55 2024
     Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:37
+    Info: Total CPU time (on all processors): 00:00:34
 
 
