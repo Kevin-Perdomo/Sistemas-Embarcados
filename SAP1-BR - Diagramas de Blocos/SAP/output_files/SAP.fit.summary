@@ -1,12 +1,12 @@
-Fitter Status : Successful - Sun Sep 08 21:25:29 2024
+Fitter Status : Successful - Mon Sep 09 23:06:47 2024
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : SAP
 Top-level Entity Name : SAP
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 423 / 49,760 ( < 1 % )
-    Total combinational functions : 393 / 49,760 ( < 1 % )
+Total logic elements : 410 / 49,760 ( < 1 % )
+    Total combinational functions : 394 / 49,760 ( < 1 % )
     Dedicated logic registers : 173 / 49,760 ( < 1 % )
 Total registers : 173
 Total pins : 48 / 360 ( 13 % )

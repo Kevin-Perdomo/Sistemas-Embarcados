@@ -2,12 +2,12 @@
 LED0 <= REGISTRADOR_DE_SAIDA:inst5.Q0
 ALU <= CONTROLLER:inst98.ALU
 dal7 => MEMORIA_RAM_COMPLETA:inst2.dal7
-PROGRAM_RUN_n => REGISTRADOR_MAR:inst6.programm_run_n
+PROGRAM_RUN_n => inst3.IN0
 PROGRAM_RUN_n => MEMORIA_RAM_COMPLETA:inst2.programm_run
 PC_OUT <= CONTROLLER:inst98.PC_OUT
-AUTO => Clock_Controller:inst.AUTO
-SEC => Clock_Controller:inst.SEC
-MAN => Clock_Controller:inst.MAN
+AUTO => CLOCK_CONTROLLER:inst4.AUTO
+SEC => CLOCK_CONTROLLER:inst4.SEC
+MAN => CLOCK_CONTROLLER:inst4.MAN
 HLT <= CONTROLLER:inst98.HLT_OUTPUT
 ACI <= CONTROLLER:inst98.ACI
 ACO <= CONTROLLER:inst98.ACO
@@ -2792,7 +2792,7 @@ Q3 <= inst99.DB_MAX_OUTPUT_PORT_TYPE
 D3 => inst9.IN1
 
 
-|SAP|Clock_Controller:inst
+|SAP|Clock_Controller:inst4
 CLK <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 SEC => inst99.IN0
 SEC => inst2.IN1
