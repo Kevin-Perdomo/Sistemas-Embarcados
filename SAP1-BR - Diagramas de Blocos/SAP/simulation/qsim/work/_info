@@ -394,23 +394,23 @@ R9
 R10
 n@d@m74@l@s283_vlg_vec_tst
 vhard_block
-Z24 !s110 1726008904
+Z24 !s110 1726013528
 !i10b 1
 !s100 ]OHjLc[zc8U7?ci=:iZIo0
 R1
 IK4B@IJF5D6j<hUkbE`6X00
 R2
 Z25 dC:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/simulation/qsim
-Z26 w1726008902
+Z26 w1726013525
 R3
 R4
-!i122 165
+!i122 167
 L0 11846 45
 R6
 r1
 !s85 0
 31
-Z27 !s108 1726008904.000000
+Z27 !s108 1726013527.000000
 R7
 R8
 !i113 1
@@ -571,7 +571,7 @@ R25
 R26
 R3
 R4
-!i122 165
+!i122 167
 L0 32 11813
 R6
 r1
@@ -585,23 +585,23 @@ R9
 R10
 n@s@a@p
 vSAP_vlg_vec_tst
-!s110 1726008905
+R24
 !i10b 1
 !s100 ?5=Ezg5U[dLS6ja[DbI@o0
 R1
 I3h:VBXIB8^eobAOYl9`ff0
 R2
 R25
-w1726008901
+w1726013523
 R30
 R31
-!i122 166
+!i122 168
 L0 30 249
 R6
 r1
 !s85 0
 31
-!s108 1726008905.000000
+!s108 1726013528.000000
 Z37 !s107 Teste_Soma.vwf.vt|
 R32
 !i113 1

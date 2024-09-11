@@ -1,5 +1,5 @@
 Flow report for SAP
-Tue Sep 10 19:55:02 2024
+Tue Sep 10 21:12:05 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Sep 10 19:55:02 2024       ;
+; Flow Status                        ; Successful - Tue Sep 10 21:12:05 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; SAP                                         ;
 ; Top-level Entity Name              ; SAP                                         ;
@@ -109,7 +109,9 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4644 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4636 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4644 MB             ; 00:00:01                           ;
-; Total                ; 00:01:06     ; --                      ; --                  ; 00:01:42                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4636 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4644 MB             ; 00:00:01                           ;
+; Total                ; 00:01:08     ; --                      ; --                  ; 00:01:44                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -134,6 +136,8 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; DESKTOP-F0QM3LL  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-F0QM3LL  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-F0QM3LL  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-F0QM3LL  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-F0QM3LL  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -144,6 +148,8 @@ quartus_map --read_settings_files=on --write_settings_files=off SAP -c SAP
 quartus_fit --read_settings_files=off --write_settings_files=off SAP -c SAP
 quartus_asm --read_settings_files=off --write_settings_files=off SAP -c SAP
 quartus_sta SAP -c SAP
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SAP -c SAP --vector_source="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/Teste_Soma.vwf" --testbench_file="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/simulation/qsim/Teste_Soma.vwf.vt"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/simulation/qsim/" SAP -c SAP
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SAP -c SAP --vector_source="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/Teste_Soma.vwf" --testbench_file="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/simulation/qsim/Teste_Soma.vwf.vt"
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/simulation/qsim/" SAP -c SAP
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SAP -c SAP --vector_source="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/Teste_Soma.vwf" --testbench_file="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP/simulation/qsim/Teste_Soma.vwf.vt"
