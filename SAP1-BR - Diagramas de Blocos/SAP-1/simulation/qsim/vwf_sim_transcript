@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Sep 11 23:14:20 2024
+    Info: Processing started: Thu Sep 12 20:48:37 2024
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SAP-1 -c SAP-1 --vector_source="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/Waveform2.vwf" --testbench_file="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/simulation/qsim/Waveform2.vwf.vt"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -55,14 +55,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Sep 11 23:14:21 2024
+    Info: Processing started: Thu Sep 12 20:48:39 2024
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/simulation/qsim/" SAP-1 -c SAP-1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file SAP-1.vo in folder "C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4644 megabytes
-    Info: Processing ended: Wed Sep 11 23:14:23 2024
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Thu Sep 12 20:48:40 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
@@ -79,38 +79,38 @@ c:/intelfpga_lite/20.1/modelsim_ase/win32aloem//vsim -c -do SAP-1.do
 
 Reading pref.tcl
 
-# 2020.1
 
+# 2020.1
 
 # do SAP-1.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:14:24 on Sep 11,2024
+# Start time: 20:48:41 on Sep 12,2024
 # vlog -work work SAP-1.vo 
-# -- Compiling module SAP1
 
+# -- Compiling module SAP1
 # -- Compiling module hard_block
 # 
 # Top level modules:
 # 	SAP1
-# End time: 23:14:25 on Sep 11,2024, Elapsed time: 0:00:01
+# End time: 20:48:42 on Sep 12,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:14:25 on Sep 11,2024
+# Start time: 20:48:42 on Sep 12,2024
 # vlog -work work Waveform2.vwf.vt 
 
 # -- Compiling module SAP1_vlg_vec_tst
 # 
 # Top level modules:
 # 	SAP1_vlg_vec_tst
-# End time: 23:14:25 on Sep 11,2024, Elapsed time: 0:00:00
+# End time: 20:48:42 on Sep 12,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.SAP1_vlg_vec_tst 
-# Start time: 23:14:25 on Sep 11,2024
+# Start time: 20:48:42 on Sep 12,2024
 # Loading work.SAP1_vlg_vec_tst
 # Loading work.SAP1
 # Loading work.hard_block
@@ -131,10 +131,9 @@ Reading pref.tcl
 #    Time: 0 ps  Iteration: 0  Instance: /SAP1_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC2~  File: SAP-1.vo Line: 11581
 # ** Warning: (vsim-3722) SAP-1.vo(11581): [TFMPC] - Missing connection for port 'clk_dft'.
 # after#26
-
 # ** Note: $finish    : Waveform2.vwf.vt(101)
 #    Time: 1 us  Iteration: 0  Instance: /SAP1_vlg_vec_tst
-# End time: 23:14:26 on Sep 11,2024, Elapsed time: 0:00:01
+# End time: 20:48:43 on Sep 12,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 4
 
 Completed successfully. 
@@ -147,7 +146,7 @@ Reading C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Bloc
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/simulation/qsim/SAP-1_20240911231426.sim.vwf
+Writing the resulting VWF to C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/simulation/qsim/SAP-1_20240912204843.sim.vwf
 
 Finished VCD to VWF conversion.
 

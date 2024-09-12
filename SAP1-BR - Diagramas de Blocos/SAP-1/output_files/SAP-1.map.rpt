@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SAP-1
-Wed Sep 11 21:52:48 2024
+Thu Sep 12 20:46:16 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Sep 11 21:52:48 2024       ;
+; Analysis & Synthesis Status        ; Successful - Thu Sep 12 20:46:16 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; SAP-1                                       ;
 ; Top-level Entity Name              ; SAP1                                        ;
@@ -165,36 +165,36 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
-+-------------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path          ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                 ; Library ;
-+-------------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
-; CI74F189_CELL.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/CI74F189_CELL.bdf                         ;         ;
-; CI74F189_BIGGER_CELL.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/CI74F189_BIGGER_CELL.bdf                  ;         ;
-; CI74F189_DECODIFICADOR.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/CI74F189_DECODIFICADOR.bdf                ;         ;
-; CI74LS153.bdf                             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/CI74LS153.bdf                             ;         ;
-; CI74LS157_MUX.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/CI74LS157_MUX.bdf                         ;         ;
-; CI74LS161.bdf                             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/CI74LS161.bdf                             ;         ;
-; CI74LS173A_REGISTRADOR_TRISTATE.bdf       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/CI74LS173A_REGISTRADOR_TRISTATE.bdf       ;         ;
-; CI74LS283_SOMADOR_COMPLETO_4BIT.bdf       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/CI74LS283_SOMADOR_COMPLETO_4BIT.bdf       ;         ;
-; CI74244_BUFFER_TRISTATE_UNIDIRECIONAL.bdf ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/CI74244_BUFFER_TRISTATE_UNIDIRECIONAL.bdf ;         ;
-; CLOCK_CONTROLLER.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/CLOCK_CONTROLLER.bdf                      ;         ;
-; CONTADOR_DE_PROGRAMA.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/CONTADOR_DE_PROGRAMA.bdf                  ;         ;
-; ENTRADA_TRI_SAIDA.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/ENTRADA_TRI_SAIDA.bdf                     ;         ;
-; CONTADOR_EM_ANEL.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/CONTADOR_EM_ANEL.bdf                      ;         ;
-; CONTROLLER.bdf                            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/CONTROLLER.bdf                            ;         ;
-; MEMORIA_RAM.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/MEMORIA_RAM.bdf                           ;         ;
-; MEMORIA_RAM_COMPLETA.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/MEMORIA_RAM_COMPLETA.bdf                  ;         ;
-; OCTAL_BUFFER_TRI.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/OCTAL_BUFFER_TRI.bdf                      ;         ;
-; REGISTRADOR_A.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/REGISTRADOR_A.bdf                         ;         ;
-; REGISTRADOR_B.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/REGISTRADOR_B.bdf                         ;         ;
-; REGISTRADOR_DE_INSTRUCOES.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/REGISTRADOR_DE_INSTRUCOES.bdf             ;         ;
-; REGISTRADOR_DE_SAIDA.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/REGISTRADOR_DE_SAIDA.bdf                  ;         ;
-; REGISTRADOR_MAR.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/REGISTRADOR_MAR.bdf                       ;         ;
-; ULA_NOVO.bdf                              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/ULA_NOVO.bdf                              ;         ;
-; SAP1.bdf                                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Desktop/kevin/SAP-1/SAP1.bdf                                  ;         ;
-+-------------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                  ;
++-------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                               ; Library ;
++-------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
+; CI74F189_CELL.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/CI74F189_CELL.bdf                         ;         ;
+; CI74F189_BIGGER_CELL.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/CI74F189_BIGGER_CELL.bdf                  ;         ;
+; CI74F189_DECODIFICADOR.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/CI74F189_DECODIFICADOR.bdf                ;         ;
+; CI74LS153.bdf                             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/CI74LS153.bdf                             ;         ;
+; CI74LS157_MUX.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/CI74LS157_MUX.bdf                         ;         ;
+; CI74LS161.bdf                             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/CI74LS161.bdf                             ;         ;
+; CI74LS173A_REGISTRADOR_TRISTATE.bdf       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/CI74LS173A_REGISTRADOR_TRISTATE.bdf       ;         ;
+; CI74LS283_SOMADOR_COMPLETO_4BIT.bdf       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/CI74LS283_SOMADOR_COMPLETO_4BIT.bdf       ;         ;
+; CI74244_BUFFER_TRISTATE_UNIDIRECIONAL.bdf ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/CI74244_BUFFER_TRISTATE_UNIDIRECIONAL.bdf ;         ;
+; CLOCK_CONTROLLER.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/CLOCK_CONTROLLER.bdf                      ;         ;
+; CONTADOR_DE_PROGRAMA.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/CONTADOR_DE_PROGRAMA.bdf                  ;         ;
+; ENTRADA_TRI_SAIDA.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/ENTRADA_TRI_SAIDA.bdf                     ;         ;
+; CONTADOR_EM_ANEL.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/CONTADOR_EM_ANEL.bdf                      ;         ;
+; CONTROLLER.bdf                            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/CONTROLLER.bdf                            ;         ;
+; MEMORIA_RAM.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/MEMORIA_RAM.bdf                           ;         ;
+; MEMORIA_RAM_COMPLETA.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/MEMORIA_RAM_COMPLETA.bdf                  ;         ;
+; OCTAL_BUFFER_TRI.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/OCTAL_BUFFER_TRI.bdf                      ;         ;
+; REGISTRADOR_A.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/REGISTRADOR_A.bdf                         ;         ;
+; REGISTRADOR_B.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/REGISTRADOR_B.bdf                         ;         ;
+; REGISTRADOR_DE_INSTRUCOES.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/REGISTRADOR_DE_INSTRUCOES.bdf             ;         ;
+; REGISTRADOR_DE_SAIDA.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/REGISTRADOR_DE_SAIDA.bdf                  ;         ;
+; REGISTRADOR_MAR.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/REGISTRADOR_MAR.bdf                       ;         ;
+; ULA_NOVO.bdf                              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/ULA_NOVO.bdf                              ;         ;
+; SAP1.bdf                                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/SAP1.bdf                                  ;         ;
++-------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------------------------+
@@ -473,7 +473,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Sep 11 21:52:34 2024
+    Info: Processing started: Thu Sep 12 20:46:00 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SAP-1 -c SAP-1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -629,9 +629,9 @@ Info (21057): Implemented 586 device resources after synthesis - the final resou
     Info (21059): Implemented 12 output pins
     Info (21061): Implemented 556 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 61 warnings
-    Info: Peak virtual memory: 4806 megabytes
-    Info: Processing ended: Wed Sep 11 21:52:48 2024
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:34
+    Info: Peak virtual memory: 4804 megabytes
+    Info: Processing ended: Thu Sep 12 20:46:16 2024
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:37
 
 

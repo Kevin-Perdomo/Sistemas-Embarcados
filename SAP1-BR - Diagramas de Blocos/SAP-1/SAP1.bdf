@@ -3412,26 +3412,14 @@ https://fpgasoftware.intel.com/eula.
 	(pt 928 2368)
 )
 (connector
-	(pt 928 2368)
-	(pt 1032 2368)
-)
-(connector
 	(text "ACI" (rect 856 2336 872 2353)(font "Intel Clear" ))
 	(pt 856 2352)
 	(pt 928 2352)
 )
 (connector
-	(pt 928 2352)
-	(pt 1032 2352)
-)
-(connector
 	(text "BRI" (rect 856 2320 872 2337)(font "Intel Clear" ))
 	(pt 856 2336)
 	(pt 928 2336)
-)
-(connector
-	(pt 928 2336)
-	(pt 1032 2336)
 )
 (connector
 	(text "HLT" (rect 1033 824 1051 841)(font "Intel Clear" ))
@@ -3578,9 +3566,6 @@ https://fpgasoftware.intel.com/eula.
 (junction (pt 1504 1776))
 (junction (pt 1504 2416))
 (junction (pt 1504 2176))
-(junction (pt 928 2368))
-(junction (pt 928 2352))
-(junction (pt 928 2336))
 (junction (pt 1504 2256))
 (junction (pt 1488 2272))
 (junction (pt 1472 2288))
