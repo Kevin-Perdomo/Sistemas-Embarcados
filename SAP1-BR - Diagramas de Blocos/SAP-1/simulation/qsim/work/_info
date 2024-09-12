@@ -1,0 +1,106 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Kevin/Desktop/SAP-1/simulation/qsim
+v\SAP-1 
+!s110 1725976129
+!i10b 1
+!s100 VIdNW^Y<D:f7`_1<ZJRPe2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IA@lXadKV^ADFJJQDTAFO]3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1725976127
+Z3 8SAP-1.vo
+Z4 FSAP-1.vo
+!i122 1
+L0 32 11937
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1725976129.000000
+Z6 !s107 SAP-1.vo|
+Z7 !s90 -work|work|SAP-1.vo|
+!i113 1
+Z8 o-work work
+Z9 tCvgOpt 0
+n@134@s@a@p-1@040
+vhard_block
+Z10 !s110 1726103331
+!i10b 1
+!s100 :VmX<=QSoJfc?aKfDGZ]G2
+R1
+I[na@4WR0M8C69f_Y?`ZbG0
+R2
+Z11 dC:/Users/kevin/Desktop/kevin/SAP-1/simulation/qsim
+Z12 w1726103329
+R3
+R4
+!i122 76
+L0 11629 45
+R5
+r1
+!s85 0
+31
+Z13 !s108 1726103330.000000
+R6
+R7
+!i113 1
+R8
+R9
+vSAP1
+R10
+!i10b 1
+!s100 `bR_F5L]1H`fiRF56g`RP2
+R1
+IlhUGVYK9HMeJV;6<cNXBj2
+R2
+R11
+R12
+R3
+R4
+!i122 76
+L0 32 11596
+R5
+r1
+!s85 0
+31
+R13
+R6
+R7
+!i113 1
+R8
+R9
+n@s@a@p1
+vSAP1_vlg_vec_tst
+R10
+!i10b 1
+!s100 YdoAa32mAOS3_UH45DOGW3
+R1
+InGd8?:HMK1=QVQEThz_8E0
+R2
+R11
+w1726103327
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+!i122 77
+L0 30 227
+R5
+r1
+!s85 0
+31
+!s108 1726103331.000000
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R8
+R9
+n@s@a@p1_vlg_vec_tst
