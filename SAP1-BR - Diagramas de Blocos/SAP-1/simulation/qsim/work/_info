@@ -34,23 +34,23 @@ Z8 o-work work
 Z9 tCvgOpt 0
 n@134@s@a@p-1@040
 vhard_block
-Z10 !s110 1726103331
+Z10 !s110 1726107265
 !i10b 1
 !s100 :VmX<=QSoJfc?aKfDGZ]G2
 R1
 I[na@4WR0M8C69f_Y?`ZbG0
 R2
-Z11 dC:/Users/kevin/Desktop/kevin/SAP-1/simulation/qsim
-Z12 w1726103329
+Z11 dC:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/simulation/qsim
+Z12 w1726107263
 R3
 R4
-!i122 76
+!i122 82
 L0 11629 45
 R5
 r1
 !s85 0
 31
-Z13 !s108 1726103330.000000
+Z13 !s108 1726107264.000000
 R6
 R7
 !i113 1
@@ -67,7 +67,7 @@ R11
 R12
 R3
 R4
-!i122 76
+!i122 82
 L0 32 11596
 R5
 r1
@@ -88,16 +88,16 @@ R1
 InGd8?:HMK1=QVQEThz_8E0
 R2
 R11
-w1726103327
+w1726107261
 8Waveform2.vwf.vt
 FWaveform2.vwf.vt
-!i122 77
+!i122 83
 L0 30 227
 R5
 r1
 !s85 0
 31
-!s108 1726103331.000000
+!s108 1726107265.000000
 !s107 Waveform2.vwf.vt|
 !s90 -work|work|Waveform2.vwf.vt|
 !i113 1

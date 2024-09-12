@@ -1,5 +1,5 @@
 Flow report for SAP-1
-Wed Sep 11 22:08:49 2024
+Wed Sep 11 23:14:23 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Sep 11 22:08:49 2024       ;
+; Flow Status                        ; Successful - Wed Sep 11 23:14:23 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; SAP-1                                       ;
 ; Top-level Entity Name              ; SAP1                                        ;
@@ -114,7 +114,14 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4644 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4644 MB             ; 00:00:01                           ;
-; Total                ; 00:01:05     ; --                      ; --                  ; 00:01:38                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4644 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4644 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4644 MB             ; 00:00:01                           ;
+; Total                ; 00:01:14     ; --                      ; --                  ; 00:01:45                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -127,6 +134,13 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; DESKTOP-F0QM3LL  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; DESKTOP-F0QM3LL  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; DESKTOP-F0QM3LL  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-F0QM3LL  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-F0QM3LL  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-F0QM3LL  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-F0QM3LL  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-F0QM3LL  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-F0QM3LL  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-F0QM3LL  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-F0QM3LL  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-F0QM3LL  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-F0QM3LL  ; Windows 10 ; 10.0       ; x86_64         ;
@@ -169,6 +183,13 @@ quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_setting
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/kevin/Desktop/kevin/SAP-1/simulation/qsim/ SAP-1 -c SAP-1
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SAP-1 -c SAP-1 --vector_source=C:/Users/kevin/Desktop/kevin/SAP-1/Waveform2.vwf --testbench_file=C:/Users/kevin/Desktop/kevin/SAP-1/simulation/qsim/Waveform2.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/kevin/Desktop/kevin/SAP-1/simulation/qsim/ SAP-1 -c SAP-1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SAP-1 -c SAP-1 --vector_source=C:/Users/kevin/Desktop/kevin/SAP-1/Waveform2.vwf --testbench_file=C:/Users/kevin/Desktop/kevin/SAP-1/simulation/qsim/Waveform2.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/kevin/Desktop/kevin/SAP-1/simulation/qsim/ SAP-1 -c SAP-1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SAP-1 -c SAP-1 --vector_source=C:/Users/kevin/Desktop/kevin/SAP-1/Waveform2.vwf --testbench_file=C:/Users/kevin/Desktop/kevin/SAP-1/simulation/qsim/Waveform2.vwf.vt
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SAP-1 -c SAP-1 --vector_source="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/Waveform2.vwf" --testbench_file="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/simulation/qsim/Waveform2.vwf.vt"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/simulation/qsim/" SAP-1 -c SAP-1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SAP-1 -c SAP-1 --vector_source="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/Waveform2.vwf" --testbench_file="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/simulation/qsim/Waveform2.vwf.vt"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/simulation/qsim/" SAP-1 -c SAP-1
 
 
 
