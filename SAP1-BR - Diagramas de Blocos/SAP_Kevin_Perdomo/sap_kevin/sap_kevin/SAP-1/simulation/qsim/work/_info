@@ -34,23 +34,23 @@ Z8 o-work work
 Z9 tCvgOpt 0
 n@134@s@a@p-1@040
 vhard_block
-Z10 !s110 1726197701
+Z10 !s110 1726199905
 !i10b 1
 !s100 :VmX<=QSoJfc?aKfDGZ]G2
 R1
 I[na@4WR0M8C69f_Y?`ZbG0
 R2
 Z11 dC:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP_Kevin_Perdomo/sap_kevin/sap_kevin/SAP-1/simulation/qsim
-Z12 w1726197699
+Z12 w1726199902
 R3
 R4
-!i122 144
+!i122 150
 L0 11629 45
 R5
 r1
 !s85 0
 31
-Z13 !s108 1726197701.000000
+Z13 !s108 1726199904.000000
 R6
 R7
 !i113 1
@@ -67,7 +67,7 @@ R11
 R12
 R3
 R4
-!i122 144
+!i122 150
 L0 32 11596
 R5
 r1
@@ -88,16 +88,16 @@ R1
 IXAhLUae5GXl8Y<g88@b;P3
 R2
 R11
-w1726197698
+w1726199901
 8Logic.vwf.vt
 FLogic.vwf.vt
-!i122 145
+!i122 151
 L0 30 229
 R5
 r1
 !s85 0
 31
-R13
+!s108 1726199905.000000
 !s107 Logic.vwf.vt|
 !s90 -work|work|Logic.vwf.vt|
 !i113 1
