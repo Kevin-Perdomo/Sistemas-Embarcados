@@ -30,6 +30,7 @@ source_file = 1, C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagrama
 source_file = 1, C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/ULA_NOVO.bdf
 source_file = 1, C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/SAP1.bdf
 source_file = 1, C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/Waveform2.vwf
+source_file = 1, C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/Waveform.vwf
 source_file = 1, C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/db/SAP-1.cbx.xml
 design_name = SAP1
 instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, SAP1, 1

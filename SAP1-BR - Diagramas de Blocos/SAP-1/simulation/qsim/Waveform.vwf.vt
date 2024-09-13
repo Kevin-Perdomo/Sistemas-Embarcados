@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "09/10/2024 11:39:35"
+// Generated on "09/12/2024 22:42:55"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          SAP1
 // 
@@ -49,20 +49,10 @@ reg RESET;
 reg SEC;
 reg WR_BUTTON;
 // wires                                               
-wire ACI;
-wire ACO;
 wire addr_0;
 wire addr_1;
 wire addr_2;
 wire addr_3;
-wire AL0;
-wire AL1;
-wire ALU;
-wire BRI;
-wire HLT;
-wire IR_IN;
-wire IRO;
-wire JMP;
 wire LED0;
 wire LED1;
 wire LED2;
@@ -71,29 +61,15 @@ wire LED4;
 wire LED5;
 wire LED6;
 wire LED7;
-wire MAI;
-wire ORI;
-wire PC_INC;
-wire PC_OUT;
-wire RMI;
-wire RMO;
-wire SUB;
-wire XOR;
 
 // assign statements (if any)                          
 SAP1 i1 (
 // port map - connection between master ports and signals/registers   
-	.ACI(ACI),
-	.ACO(ACO),
 	.addr_0(addr_0),
 	.addr_1(addr_1),
 	.addr_2(addr_2),
 	.addr_3(addr_3),
-	.AL0(AL0),
-	.AL1(AL1),
-	.ALU(ALU),
 	.AUTO(AUTO),
-	.BRI(BRI),
 	.dal0(dal0),
 	.dal1(dal1),
 	.dal2(dal2),
@@ -102,10 +78,6 @@ SAP1 i1 (
 	.dal5(dal5),
 	.dal6(dal6),
 	.dal7(dal7),
-	.HLT(HLT),
-	.IR_IN(IR_IN),
-	.IRO(IRO),
-	.JMP(JMP),
 	.LED0(LED0),
 	.LED1(LED1),
 	.LED2(LED2),
@@ -114,41 +86,19 @@ SAP1 i1 (
 	.LED5(LED5),
 	.LED6(LED6),
 	.LED7(LED7),
-	.MAI(MAI),
 	.MAN(MAN),
 	.mar_dip0(mar_dip0),
 	.mar_dip1(mar_dip1),
 	.mar_dip2(mar_dip2),
 	.mar_dip3(mar_dip3),
-	.ORI(ORI),
-	.PC_INC(PC_INC),
-	.PC_OUT(PC_OUT),
 	.PROGRAM_RUN_n(PROGRAM_RUN_n),
 	.RESET(RESET),
-	.RMI(RMI),
-	.RMO(RMO),
 	.SEC(SEC),
-	.SUB(SUB),
-	.WR_BUTTON(WR_BUTTON),
-	.\XOR (XOR)
+	.WR_BUTTON(WR_BUTTON)
 );
 initial 
 begin 
 #1000000 $finish;
-end 
-
-// AUTO
-initial
-begin
-	AUTO = 1'b0;
-	AUTO = #485000 1'b1;
-	# 5000;
-	repeat(51)
-	begin
-		AUTO = 1'b0;
-		AUTO = #5000 1'b1;
-		# 5000;
-	end
 end 
 
 // mar_dip3
@@ -189,52 +139,56 @@ end
 initial
 begin
 	dal7 = 1'b0;
-	dal7 = #80000 1'b1;
-	dal7 = #240000 1'b0;
+	dal7 = #160000 1'b1;
+	dal7 = #160000 1'b0;
 end 
 
 // dal6
 initial
 begin
 	dal6 = 1'b0;
-	dal6 = #160000 1'b1;
-	dal6 = #80000 1'b0;
+	dal6 = #80000 1'b1;
+	dal6 = #240000 1'b0;
 end 
 
 // dal5
 initial
 begin
 	dal5 = 1'b0;
-	dal5 = #160000 1'b1;
-	dal5 = #160000 1'b0;
+	dal5 = #80000 1'b1;
+	dal5 = #240000 1'b0;
 end 
 
 // dal4
 initial
 begin
 	dal4 = 1'b1;
-	dal4 = #160000 1'b0;
+	dal4 = #80000 1'b0;
+	dal4 = #160000 1'b1;
+	dal4 = #80000 1'b0;
 end 
 
 // dal3
 initial
 begin
 	dal3 = 1'b1;
-	dal3 = #80000 1'b0;
+	dal3 = #160000 1'b0;
 end 
 
 // dal2
 initial
 begin
 	dal2 = 1'b0;
+	dal2 = #320000 1'b1;
+	dal2 = #80000 1'b0;
 end 
 
 // dal1
 initial
 begin
 	dal1 = 1'b0;
-	dal1 = #320000 1'b1;
-	dal1 = #160000 1'b0;
+	dal1 = #400000 1'b1;
+	dal1 = #80000 1'b0;
 end 
 
 // dal0
@@ -243,32 +197,33 @@ begin
 	dal0 = 1'b0;
 	dal0 = #80000 1'b1;
 	dal0 = #80000 1'b0;
-	dal0 = #80000 1'b1;
+	dal0 = #240000 1'b1;
 	dal0 = #80000 1'b0;
 end 
 
 // WR_BUTTON
 initial
 begin
-	repeat(47)
-	begin
-		WR_BUTTON = 1'b0;
-		WR_BUTTON = #5000 1'b1;
-		# 5000;
-	end
 	WR_BUTTON = 1'b0;
+	WR_BUTTON = #30000 1'b1;
+	WR_BUTTON = #20000 1'b0;
+	WR_BUTTON = #60000 1'b1;
+	WR_BUTTON = #20000 1'b0;
+	WR_BUTTON = #60000 1'b1;
+	WR_BUTTON = #20000 1'b0;
+	WR_BUTTON = #60000 1'b1;
+	WR_BUTTON = #20000 1'b0;
+	WR_BUTTON = #60000 1'b1;
+	WR_BUTTON = #20000 1'b0;
+	WR_BUTTON = #60000 1'b1;
+	WR_BUTTON = #20000 1'b0;
 end 
 
 // PROGRAM_RUN_n
 initial
 begin
 	PROGRAM_RUN_n = 1'b0;
-end 
-
-// MAN
-initial
-begin
-	MAN = 1'b0;
+	PROGRAM_RUN_n = #480000 1'b1;
 end 
 
 // RESET

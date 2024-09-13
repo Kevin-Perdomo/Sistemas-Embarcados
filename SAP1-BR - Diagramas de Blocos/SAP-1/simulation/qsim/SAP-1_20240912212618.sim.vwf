@@ -1,52 +1,3 @@
-/*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SAP-1 -c SAP-1 --vector_source="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/Waveform2.vwf" --testbench_file="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/simulation/qsim/Waveform2.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SAP-1 -c SAP-1 --vector_source="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/Waveform2.vwf" --testbench_file="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/simulation/qsim/Waveform2.vwf.vt"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/simulation/qsim/" SAP-1 -c SAP-1</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Diagramas de Blocos/SAP-1/simulation/qsim/" SAP-1 -c SAP-1</tnetlist_cmd>
-<modelsim_script>onerror {exit -code 1}
-vlib work
-vlog -work work SAP-1.vo
-vlog -work work Waveform2.vwf.vt
-vsim  -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.SAP1_vlg_vec_tst
-vcd file -direction SAP-1.msim.vcd
-vcd add -internal SAP1_vlg_vec_tst/*
-vcd add -internal SAP1_vlg_vec_tst/i1/*
-proc simTimestamp {} {
-    echo "Simulation time: $::now ps"
-    if { [string equal running [runStatus]] } {
-        after 2500 simTimestamp
-    }
-}
-after 2500 simTimestamp
-run -all
-quit -f
-
-
-
-</modelsim_script>
-<modelsim_script_timing>onerror {exit -code 1}
-vlib work
-vlog -work work SAP-1.vo
-vlog -work work Waveform2.vwf.vt
-vsim -novopt -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.SAP1_vlg_vec_tst
-vcd file -direction SAP-1.msim.vcd
-vcd add -internal SAP1_vlg_vec_tst/*
-vcd add -internal SAP1_vlg_vec_tst/i1/*
-proc simTimestamp {} {
-    echo "Simulation time: $::now ps"
-    if { [string equal running [runStatus]] } {
-        after 2500 simTimestamp
-    }
-}
-after 2500 simTimestamp
-run -all
-quit -f
-
-
-
-</modelsim_script_timing>
-<hdl_lang>verilog</hdl_lang>
-</simulation_settings>*/
 /*
 WARNING: Do NOT edit the input and output ports in this file in a text
 editor if you plan to continue editing the block that represents it in
@@ -80,6 +31,16 @@ HEADER
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 10.0;
 	GRID_DUTY_CYCLE = 50;
+}
+
+SIGNAL("Auto_CLK")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
 }
 
 SIGNAL("dal0")
@@ -153,16 +114,6 @@ SIGNAL("dal6")
 }
 
 SIGNAL("dal7")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("AUTO")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -252,7 +203,7 @@ SIGNAL("LED7")
 	PARENT = "";
 }
 
-SIGNAL("MAN")
+SIGNAL("Man_CLK")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -342,19 +293,35 @@ SIGNAL("WR_BUTTON")
 	PARENT = "";
 }
 
-GROUP("ramdip")
-{
-	MEMBERS = "dal0", "dal1", "dal2", "dal3", "dal4", "dal5", "dal6", "dal7";
-}
-
-GROUP("saida")
+GROUP("LED")
 {
 	MEMBERS = "LED0", "LED1", "LED2", "LED3", "LED4", "LED5", "LED6", "LED7";
 }
 
-GROUP("mardip")
+GROUP("Address")
 {
 	MEMBERS = "mar_dip0", "mar_dip1", "mar_dip2", "mar_dip3";
+}
+
+GROUP("opcode_addr")
+{
+	MEMBERS = "dal0", "dal1", "dal2", "dal3", "dal4", "dal5", "dal6", "dal7";
+}
+
+TRANSITION_LIST("Auto_CLK")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 405.0;
+		LEVEL 1 FOR 5.0;
+		NODE
+		{
+			REPEAT = 59;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
+		}
+	}
 }
 
 TRANSITION_LIST("dal0")
@@ -362,11 +329,15 @@ TRANSITION_LIST("dal0")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 760.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 80.0;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 160.0;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 600.0;
+		}
 	}
 }
 
@@ -375,9 +346,13 @@ TRANSITION_LIST("dal1")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 240.0;
-		LEVEL 1 FOR 110.0;
-		LEVEL 0 FOR 650.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 320.0;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 600.0;
+		}
 	}
 }
 
@@ -386,7 +361,11 @@ TRANSITION_LIST("dal2")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 1000.0;
+		}
 	}
 }
 
@@ -395,10 +374,14 @@ TRANSITION_LIST("dal3")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 110.0;
-		LEVEL 0 FOR 650.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 1 FOR 160.0;
+			LEVEL 0 FOR 80.0;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 680.0;
+		}
 	}
 }
 
@@ -407,8 +390,12 @@ TRANSITION_LIST("dal4")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 940.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 920.0;
+		}
 	}
 }
 
@@ -417,9 +404,13 @@ TRANSITION_LIST("dal5")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 760.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 160.0;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 760.0;
+		}
 	}
 }
 
@@ -428,9 +419,13 @@ TRANSITION_LIST("dal6")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 820.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 160.0;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 760.0;
+		}
 	}
 }
 
@@ -439,24 +434,12 @@ TRANSITION_LIST("dal7")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 760.0;
-	}
-}
-
-TRANSITION_LIST("AUTO")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 355.0;
-		LEVEL 1 FOR 5.0;
 		NODE
 		{
-			REPEAT = 64;
-			LEVEL 0 FOR 5.0;
-			LEVEL 1 FOR 5.0;
+			REPEAT = 1;
+			LEVEL 0 FOR 80.0;
+			LEVEL 1 FOR 160.0;
+			LEVEL 0 FOR 760.0;
 		}
 	}
 }
@@ -466,7 +449,11 @@ TRANSITION_LIST("LED0")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 1000.0;
+		}
 	}
 }
 
@@ -475,7 +462,11 @@ TRANSITION_LIST("LED1")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 1000.0;
+		}
 	}
 }
 
@@ -484,7 +475,11 @@ TRANSITION_LIST("LED2")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 1000.0;
+		}
 	}
 }
 
@@ -493,7 +488,11 @@ TRANSITION_LIST("LED3")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 1000.0;
+		}
 	}
 }
 
@@ -502,7 +501,11 @@ TRANSITION_LIST("LED4")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 1000.0;
+		}
 	}
 }
 
@@ -511,7 +514,11 @@ TRANSITION_LIST("LED5")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 1000.0;
+		}
 	}
 }
 
@@ -520,7 +527,11 @@ TRANSITION_LIST("LED6")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 1000.0;
+		}
 	}
 }
 
@@ -529,11 +540,15 @@ TRANSITION_LIST("LED7")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 1000.0;
+		}
 	}
 }
 
-TRANSITION_LIST("MAN")
+TRANSITION_LIST("Man_CLK")
 {
 	NODE
 	{
@@ -547,13 +562,15 @@ TRANSITION_LIST("mar_dip0")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 650.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 80.0;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 160.0;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 600.0;
+		}
 	}
 }
 
@@ -562,9 +579,13 @@ TRANSITION_LIST("mar_dip1")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 760.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 160.0;
+			LEVEL 1 FOR 80.0;
+			LEVEL 0 FOR 760.0;
+		}
 	}
 }
 
@@ -573,7 +594,11 @@ TRANSITION_LIST("mar_dip2")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 1000.0;
+		}
 	}
 }
 
@@ -582,9 +607,13 @@ TRANSITION_LIST("mar_dip3")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 240.0;
-		LEVEL 1 FOR 110.0;
-		LEVEL 0 FOR 650.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 240.0;
+			LEVEL 1 FOR 160.0;
+			LEVEL 0 FOR 600.0;
+		}
 	}
 }
 
@@ -593,8 +622,12 @@ TRANSITION_LIST("PROGRAM_RUN_n")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 350.0;
-		LEVEL 1 FOR 650.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 400.0;
+			LEVEL 1 FOR 600.0;
+		}
 	}
 }
 
@@ -603,7 +636,11 @@ TRANSITION_LIST("RESET")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 1000.0;
+		}
 	}
 }
 
@@ -612,7 +649,11 @@ TRANSITION_LIST("SEC")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 1000.0;
+		}
 	}
 }
 
@@ -621,25 +662,27 @@ TRANSITION_LIST("WR_BUTTON")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 670.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 30.0;
+			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 60.0;
+			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 60.0;
+			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 60.0;
+			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 60.0;
+			LEVEL 1 FOR 20.0;
+			LEVEL 0 FOR 630.0;
+		}
 	}
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "AUTO";
+	CHANNEL = "Auto_CLK";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
@@ -648,7 +691,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "mardip";
+	CHANNEL = "Address";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
@@ -698,7 +741,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "ramdip";
+	CHANNEL = "opcode_addr";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
@@ -806,7 +849,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "MAN";
+	CHANNEL = "Man_CLK";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 17;
@@ -833,9 +876,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "saida";
+	CHANNEL = "LED";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 20;
 	TREE_LEVEL = 0;
 	CHILDREN = 21, 22, 23, 24, 25, 26, 27, 28;
@@ -845,7 +888,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "LED7";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 21;
 	TREE_LEVEL = 1;
 	PARENT = 20;
@@ -855,7 +898,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "LED6";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 22;
 	TREE_LEVEL = 1;
 	PARENT = 20;
@@ -865,7 +908,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "LED5";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 23;
 	TREE_LEVEL = 1;
 	PARENT = 20;
@@ -875,7 +918,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "LED4";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 24;
 	TREE_LEVEL = 1;
 	PARENT = 20;
@@ -885,7 +928,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "LED3";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 25;
 	TREE_LEVEL = 1;
 	PARENT = 20;
@@ -895,7 +938,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "LED2";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 26;
 	TREE_LEVEL = 1;
 	PARENT = 20;
@@ -905,7 +948,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "LED1";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 27;
 	TREE_LEVEL = 1;
 	PARENT = 20;
@@ -915,7 +958,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "LED0";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 28;
 	TREE_LEVEL = 1;
 	PARENT = 20;
