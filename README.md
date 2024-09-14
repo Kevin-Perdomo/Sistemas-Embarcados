@@ -38,5 +38,5 @@ O projeto está dividido em duas etapas principais:
 ### Requisitos do Sistema
 
 - **Sistema Operacional**: Windows 10 ou superior (64 bits).
-- **Espaço em Disco**: Mínimo de 40 GB.
+- **Espaço em Disco**: Mínimo de 20 GB.
 - **Memória RAM**: Recomendado 8 GB ou mais.
