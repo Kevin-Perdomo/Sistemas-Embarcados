@@ -1,5 +1,5 @@
 Fitter report for SAP_VERILOG
-Sun Oct 13 14:23:14 2024
+Sun Oct 13 15:41:57 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sun Oct 13 14:23:14 2024       ;
+; Fitter Status                      ; Successful - Sun Oct 13 15:41:57 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; SAP_VERILOG                                 ;
 ; Top-level Entity Name              ; sap                                         ;
@@ -154,12 +154,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
-; Average used               ; 1.14        ;
+; Average used               ; 1.13        ;
 ; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.0%      ;
+;     Processor 2            ;   1.9%      ;
 ;     Processor 3            ;   1.9%      ;
 ;     Processor 4            ;   1.9%      ;
 ;     Processor 5            ;   1.9%      ;
@@ -207,7 +207,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/output_files/SAP_VERILOG.pin.
+The pin-out file can be found in C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/output_files/SAP_VERILOG.pin.
 
 
 +----------------------------------------------------------------------+
@@ -1478,25 +1478,25 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node memoria_ram:memoria_ram|WE  File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/memoria_ram.v Line: 36
+Info (176353): Automatically promoted node memoria_ram:memoria_ram|WE  File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/memoria_ram.v Line: 36
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node f_clock  File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 24
+Info (176353): Automatically promoted node f_clock  File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/sap.v Line: 24
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node controller:controller|RAM_IN File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/controller.v Line: 12
-Info (176353): Automatically promoted node clear~input (placed in PIN M8 (CLK1n, DIFFIO_RX_L36n, DIFFOUT_L36n, High_Speed)) File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 3
+        Info (176357): Destination node controller:controller|RAM_IN File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/controller.v Line: 12
+Info (176353): Automatically promoted node clear~input (placed in PIN M8 (CLK1n, DIFFIO_RX_L36n, DIFFOUT_L36n, High_Speed)) File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/sap.v Line: 3
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G0
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node controller:controller|ACC_OUT File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/controller.v Line: 9
-        Info (176357): Destination node controller:controller|ALU_OUT File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/controller.v Line: 13
-        Info (176357): Destination node controller:controller|RAM_OUT File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/controller.v Line: 11
-        Info (176357): Destination node controller:controller|ALU0 File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/controller.v Line: 16
-        Info (176357): Destination node controller:controller|ALU1 File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/controller.v Line: 17
-        Info (176357): Destination node controller:controller|ADD_SUB File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/controller.v Line: 14
-        Info (176357): Destination node controller:controller|ACC_IN File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/controller.v Line: 8
-        Info (176357): Destination node controller:controller|BR_IN File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/controller.v Line: 18
-        Info (176357): Destination node controller:controller|RAM_IN File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/controller.v Line: 12
-        Info (176357): Destination node controller:controller|MAR_IN File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/controller.v Line: 10
+        Info (176357): Destination node controller:controller|ACC_OUT File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/controller.v Line: 9
+        Info (176357): Destination node controller:controller|ALU_OUT File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/controller.v Line: 13
+        Info (176357): Destination node controller:controller|RAM_OUT File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/controller.v Line: 11
+        Info (176357): Destination node controller:controller|ALU0 File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/controller.v Line: 16
+        Info (176357): Destination node controller:controller|ALU1 File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/controller.v Line: 17
+        Info (176357): Destination node controller:controller|ADD_SUB File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/controller.v Line: 14
+        Info (176357): Destination node controller:controller|ACC_IN File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/controller.v Line: 8
+        Info (176357): Destination node controller:controller|BR_IN File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/controller.v Line: 18
+        Info (176357): Destination node controller:controller|RAM_IN File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/controller.v Line: 12
+        Info (176357): Destination node controller:controller|MAR_IN File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/controller.v Line: 10
         Info (176358): Non-global destination nodes limited to 10 nodes
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -1528,23 +1528,23 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.79 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.78 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
-Info (144001): Generated suppressed messages file C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/output_files/SAP_VERILOG.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/output_files/SAP_VERILOG.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5926 megabytes
-    Info: Processing ended: Sun Oct 13 14:23:14 2024
+    Info: Peak virtual memory: 5925 megabytes
+    Info: Processing ended: Sun Oct 13 15:41:57 2024
     Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Total CPU time (on all processors): 00:00:29
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/output_files/SAP_VERILOG.fit.smsg.
+The suppressed messages can be found in C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/output_files/SAP_VERILOG.fit.smsg.
 
 

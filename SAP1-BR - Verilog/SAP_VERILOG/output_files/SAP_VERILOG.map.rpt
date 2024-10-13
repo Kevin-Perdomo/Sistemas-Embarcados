@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SAP_VERILOG
-Sun Oct 13 14:22:55 2024
+Sun Oct 13 15:41:38 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -60,7 +60,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 13 14:22:55 2024       ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 13 15:41:38 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; SAP_VERILOG                                 ;
 ; Top-level Entity Name              ; sap                                         ;
@@ -182,26 +182,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                          ;
-+------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path   ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                          ; Library ;
-+------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
-; sap.v                              ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v                              ;         ;
-; ci157_MUX.v                        ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci157_MUX.v                        ;         ;
-; ci161_Contador_sincrono.v          ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci161_Contador_sincrono.v          ;         ;
-; ci173_registrador_tristate_4bits.v ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci173_registrador_tristate_4bits.v ;         ;
-; ci244_octaBuffer_tristate.v        ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci244_octaBuffer_tristate.v        ;         ;
-; acumulador.v                       ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/acumulador.v                       ;         ;
-; contador_de_programa.v             ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/contador_de_programa.v             ;         ;
-; controller.v                       ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/controller.v                       ;         ;
-; memoria_ram.v                      ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/memoria_ram.v                      ;         ;
-; registrador_B.v                    ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_B.v                    ;         ;
-; registrador_de_instrucoes.v        ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_de_instrucoes.v        ;         ;
-; registrador_de_saida.v             ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_de_saida.v             ;         ;
-; registrador_mar.v                  ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_mar.v                  ;         ;
-; ula.v                              ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ula.v                              ;         ;
-+------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                  ;
++------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path   ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                  ; Library ;
++------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------------------------+---------+
+; sap.v                              ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/sap.v                              ;         ;
+; ci157_MUX.v                        ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/ci157_MUX.v                        ;         ;
+; ci161_Contador_sincrono.v          ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/ci161_Contador_sincrono.v          ;         ;
+; ci173_registrador_tristate_4bits.v ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/ci173_registrador_tristate_4bits.v ;         ;
+; ci244_octaBuffer_tristate.v        ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/ci244_octaBuffer_tristate.v        ;         ;
+; acumulador.v                       ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/acumulador.v                       ;         ;
+; contador_de_programa.v             ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/contador_de_programa.v             ;         ;
+; controller.v                       ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/controller.v                       ;         ;
+; memoria_ram.v                      ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/memoria_ram.v                      ;         ;
+; registrador_B.v                    ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/registrador_B.v                    ;         ;
+; registrador_de_instrucoes.v        ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/registrador_de_instrucoes.v        ;         ;
+; registrador_de_saida.v             ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/registrador_de_saida.v             ;         ;
+; registrador_mar.v                  ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/registrador_mar.v                  ;         ;
+; ula.v                              ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/ula.v                              ;         ;
++------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------------------+
@@ -499,79 +499,75 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Oct 13 14:22:40 2024
+    Info: Processing started: Sun Oct 13 15:41:22 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SAP_VERILOG -c SAP_VERILOG
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file sap.v
-    Info (12023): Found entity 1: sap File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 1
+    Info (12023): Found entity 1: sap File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/sap.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ci157.v
-    Info (12023): Found entity 1: ci157 File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci157.v Line: 1
+    Info (12023): Found entity 1: ci157 File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/ci157.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ci157_mux.v
-    Info (12023): Found entity 1: ci157_MUX File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci157_MUX.v Line: 1
+    Info (12023): Found entity 1: ci157_MUX File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/ci157_MUX.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ci161_contador_sincrono.v
-    Info (12023): Found entity 1: ci161_Contador_sincrono File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci161_Contador_sincrono.v Line: 1
+    Info (12023): Found entity 1: ci161_Contador_sincrono File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/ci161_Contador_sincrono.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ci173_registrador_tristate_4bits.v
-    Info (12023): Found entity 1: ci173_registrador_tristate_4bits File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci173_registrador_tristate_4bits.v Line: 1
+    Info (12023): Found entity 1: ci173_registrador_tristate_4bits File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/ci173_registrador_tristate_4bits.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ci244_octabuffer_tristate.v
-    Info (12023): Found entity 1: ci244_octaBuffer_tristate File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci244_octaBuffer_tristate.v Line: 1
+    Info (12023): Found entity 1: ci244_octaBuffer_tristate File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/ci244_octaBuffer_tristate.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file acumulador.v
-    Info (12023): Found entity 1: acumulador File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/acumulador.v Line: 1
+    Info (12023): Found entity 1: acumulador File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/acumulador.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contador_de_programa.v
-    Info (12023): Found entity 1: contador_de_programa File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/contador_de_programa.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file contador_sincrono_32bits.v
-    Info (12023): Found entity 1: Contador_sincrono_32bits File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/Contador_sincrono_32bits.v Line: 1
+    Info (12023): Found entity 1: contador_de_programa File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/contador_de_programa.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file controller.v
-    Info (12023): Found entity 1: controller File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/controller.v Line: 1
+    Info (12023): Found entity 1: controller File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/controller.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file demux.v
-    Info (12023): Found entity 1: DEMUX File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/DEMUX.v Line: 1
+    Info (12023): Found entity 1: DEMUX File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/DEMUX.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file flip_flop_d.v
-    Info (12023): Found entity 1: flip_flop_D File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/flip_flop_D.v Line: 1
+    Info (12023): Found entity 1: flip_flop_D File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/flip_flop_D.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file memoria_ram.v
-    Info (12023): Found entity 1: memoria_ram File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/memoria_ram.v Line: 1
+    Info (12023): Found entity 1: memoria_ram File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/memoria_ram.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registrador_b.v
-    Info (12023): Found entity 1: registrador_B File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_B.v Line: 1
+    Info (12023): Found entity 1: registrador_B File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/registrador_B.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registrador_de_instrucoes.v
-    Info (12023): Found entity 1: registrador_de_instrucoes File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_de_instrucoes.v Line: 1
+    Info (12023): Found entity 1: registrador_de_instrucoes File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/registrador_de_instrucoes.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registrador_de_saida.v
-    Info (12023): Found entity 1: registrador_de_saida File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_de_saida.v Line: 1
+    Info (12023): Found entity 1: registrador_de_saida File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/registrador_de_saida.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registrador_mar.v
-    Info (12023): Found entity 1: registrador_mar File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_mar.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file testemux.v
-    Info (12023): Found entity 1: testeMUX File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/testeMUX.v Line: 3
+    Info (12023): Found entity 1: registrador_mar File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/registrador_mar.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ula.v
-    Info (12023): Found entity 1: ula File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ula.v Line: 1
+    Info (12023): Found entity 1: ula File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/ula.v Line: 1
 Info (12127): Elaborating entity "sap" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at sap.v(24): truncated value with size 32 to match size of target (1) File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 24
-Info (12128): Elaborating entity "controller" for hierarchy "controller:controller" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 49
-Info (12128): Elaborating entity "contador_de_programa" for hierarchy "contador_de_programa:contador_de_programa" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 60
-Info (12128): Elaborating entity "ci161_Contador_sincrono" for hierarchy "contador_de_programa:contador_de_programa|ci161_Contador_sincrono:contador" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/contador_de_programa.v Line: 23
-Info (12128): Elaborating entity "ci244_octaBuffer_tristate" for hierarchy "contador_de_programa:contador_de_programa|ci244_octaBuffer_tristate:buffer" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/contador_de_programa.v Line: 31
-Info (12128): Elaborating entity "registrador_mar" for hierarchy "registrador_mar:registrador_mar" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 71
-Info (12128): Elaborating entity "ci173_registrador_tristate_4bits" for hierarchy "registrador_mar:registrador_mar|ci173_registrador_tristate_4bits:ci173_1" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_mar.v Line: 21
-Info (12128): Elaborating entity "ci157_MUX" for hierarchy "registrador_mar:registrador_mar|ci157_MUX:ci157_1" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_mar.v Line: 29
-Info (12128): Elaborating entity "registrador_de_instrucoes" for hierarchy "registrador_de_instrucoes:registrador_de_instrucoes" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 82
-Info (12128): Elaborating entity "registrador_de_saida" for hierarchy "registrador_de_saida:registrador_de_saida" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 91
-Info (12128): Elaborating entity "registrador_B" for hierarchy "registrador_B:registrador_B" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 100
-Info (12128): Elaborating entity "acumulador" for hierarchy "acumulador:acumulador" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 111
-Info (12128): Elaborating entity "ula" for hierarchy "ula:ula" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 123
-Info (12128): Elaborating entity "memoria_ram" for hierarchy "memoria_ram:memoria_ram" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 136
+Warning (10230): Verilog HDL assignment warning at sap.v(24): truncated value with size 32 to match size of target (1) File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/sap.v Line: 24
+Info (12128): Elaborating entity "controller" for hierarchy "controller:controller" File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/sap.v Line: 49
+Info (12128): Elaborating entity "contador_de_programa" for hierarchy "contador_de_programa:contador_de_programa" File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/sap.v Line: 60
+Info (12128): Elaborating entity "ci161_Contador_sincrono" for hierarchy "contador_de_programa:contador_de_programa|ci161_Contador_sincrono:contador" File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/contador_de_programa.v Line: 23
+Info (12128): Elaborating entity "ci244_octaBuffer_tristate" for hierarchy "contador_de_programa:contador_de_programa|ci244_octaBuffer_tristate:buffer" File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/contador_de_programa.v Line: 31
+Info (12128): Elaborating entity "registrador_mar" for hierarchy "registrador_mar:registrador_mar" File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/sap.v Line: 71
+Info (12128): Elaborating entity "ci173_registrador_tristate_4bits" for hierarchy "registrador_mar:registrador_mar|ci173_registrador_tristate_4bits:ci173_1" File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/registrador_mar.v Line: 21
+Info (12128): Elaborating entity "ci157_MUX" for hierarchy "registrador_mar:registrador_mar|ci157_MUX:ci157_1" File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/registrador_mar.v Line: 29
+Info (12128): Elaborating entity "registrador_de_instrucoes" for hierarchy "registrador_de_instrucoes:registrador_de_instrucoes" File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/sap.v Line: 82
+Info (12128): Elaborating entity "registrador_de_saida" for hierarchy "registrador_de_saida:registrador_de_saida" File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/sap.v Line: 91
+Info (12128): Elaborating entity "registrador_B" for hierarchy "registrador_B:registrador_B" File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/sap.v Line: 100
+Info (12128): Elaborating entity "acumulador" for hierarchy "acumulador:acumulador" File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/sap.v Line: 111
+Info (12128): Elaborating entity "ula" for hierarchy "ula:ula" File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/sap.v Line: 123
+Info (12128): Elaborating entity "memoria_ram" for hierarchy "memoria_ram:memoria_ram" File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/sap.v Line: 136
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node "bus[7]" into a selector File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci173_registrador_tristate_4bits.v Line: 9
-    Warning (13048): Converted tri-state node "bus[6]" into a selector File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci173_registrador_tristate_4bits.v Line: 9
-    Warning (13048): Converted tri-state node "bus[5]" into a selector File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci173_registrador_tristate_4bits.v Line: 9
-    Warning (13048): Converted tri-state node "bus[4]" into a selector File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci173_registrador_tristate_4bits.v Line: 9
-    Warning (13048): Converted tri-state node "bus[3]" into a selector File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci161_Contador_sincrono.v Line: 9
-    Warning (13048): Converted tri-state node "bus[2]" into a selector File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci161_Contador_sincrono.v Line: 9
-    Warning (13048): Converted tri-state node "bus[1]" into a selector File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci161_Contador_sincrono.v Line: 9
-    Warning (13048): Converted tri-state node "bus[0]" into a selector File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci161_Contador_sincrono.v Line: 9
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/db/SAP_VERILOG.ram0_memoria_ram_2c141c.hdl.mif" contains "don't care" values -- overwriting them with 0s
+    Warning (13048): Converted tri-state node "bus[7]" into a selector File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/ci173_registrador_tristate_4bits.v Line: 9
+    Warning (13048): Converted tri-state node "bus[6]" into a selector File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/ci173_registrador_tristate_4bits.v Line: 9
+    Warning (13048): Converted tri-state node "bus[5]" into a selector File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/ci173_registrador_tristate_4bits.v Line: 9
+    Warning (13048): Converted tri-state node "bus[4]" into a selector File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/ci173_registrador_tristate_4bits.v Line: 9
+    Warning (13048): Converted tri-state node "bus[3]" into a selector File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/ci161_Contador_sincrono.v Line: 9
+    Warning (13048): Converted tri-state node "bus[2]" into a selector File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/ci161_Contador_sincrono.v Line: 9
+    Warning (13048): Converted tri-state node "bus[1]" into a selector File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/ci161_Contador_sincrono.v Line: 9
+    Warning (13048): Converted tri-state node "bus[0]" into a selector File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/ci161_Contador_sincrono.v Line: 9
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/db/SAP_VERILOG.ram0_memoria_ram_2c141c.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276013): RAM logic "memoria_ram:memoria_ram|memoria" is uninferred because MIF is not supported for the selected family File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/memoria_ram.v Line: 14
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/db/SAP_VERILOG.ram0_memoria_ram_2c141c.hdl.mif" contains "don't care" values -- overwriting them with 0s
+    Info (276013): RAM logic "memoria_ram:memoria_ram|memoria" is uninferred because MIF is not supported for the selected family File: C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/memoria_ram.v Line: 14
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/db/SAP_VERILOG.ram0_memoria_ram_2c141c.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Warning (12241): 14 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/output_files/SAP_VERILOG.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/output_files/SAP_VERILOG.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 426 device resources after synthesis - the final resource count might be different
@@ -580,14 +576,14 @@ Info (21057): Implemented 426 device resources after synthesis - the final resou
     Info (21061): Implemented 402 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
     Info: Peak virtual memory: 4801 megabytes
-    Info: Processing ended: Sun Oct 13 14:22:55 2024
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:35
+    Info: Processing ended: Sun Oct 13 15:41:38 2024
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:34
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/output_files/SAP_VERILOG.map.smsg.
+The suppressed messages can be found in C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/output_files/SAP_VERILOG.map.smsg.
 
 

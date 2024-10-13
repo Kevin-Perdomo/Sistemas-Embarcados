@@ -8,42 +8,42 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/simulation/qsim
+dC:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/simulation/qsim
 vhard_block
-Z1 !s110 1728844172
+Z0 !s110 1728844962
 !i10b 1
 !s100 ;kJGY^SK]UhV^=nH>PPV:2
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
 I3GHK:zZoEf9`G>l7<GfOR3
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-R0
-Z4 w1728844170
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/simulation/qsim
+Z4 w1728844960
 Z5 8SAP_VERILOG.vo
 Z6 FSAP_VERILOG.vo
-!i122 12
+!i122 24
 L0 10420 45
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1728844172.000000
+Z8 !s108 1728844962.000000
 Z9 !s107 SAP_VERILOG.vo|
 Z10 !s90 -work|work|SAP_VERILOG.vo|
 !i113 1
 Z11 o-work work
 Z12 tCvgOpt 0
 vsap
-R1
+R0
 !i10b 1
 !s100 Q>OHEjFega8VTS53CC<[]0
-R2
+R1
 I7FJ8>kjP9mf?RCjYMF8kJ1
+R2
 R3
-R0
 R4
 R5
 R6
-!i122 12
+!i122 24
 L0 32 10387
 R7
 r1
@@ -56,25 +56,25 @@ R10
 R11
 R12
 vsap_vlg_vec_tst
-R1
+!s110 1728844963
 !i10b 1
-!s100 ]S8W6;<lJl1Wn@3=D<8n92
+!s100 6U6jjA@jBc><aG;a3BYDP3
+R1
+I8zWk<ohg24X@IPUbRRLOc1
 R2
-IQI[W:kzE7MYLj@;G=AnPF0
 R3
-R0
-w1728844169
-8Arithmetic.vwf.vt
-FArithmetic.vwf.vt
-!i122 13
+w1728844959
+8Logic.vwf.vt
+FLogic.vwf.vt
+!i122 25
 L0 30 157
 R7
 r1
 !s85 0
 31
 R8
-!s107 Arithmetic.vwf.vt|
-!s90 -work|work|Arithmetic.vwf.vt|
+!s107 Logic.vwf.vt|
+!s90 -work|work|Logic.vwf.vt|
 !i113 1
 R11
 R12

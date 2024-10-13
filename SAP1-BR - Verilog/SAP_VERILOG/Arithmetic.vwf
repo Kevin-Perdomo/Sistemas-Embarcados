@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SAP_VERILOG -c SAP_VERILOG --vector_source="C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/Arithmetic.vwf" --testbench_file="C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/simulation/qsim/Arithmetic.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SAP_VERILOG -c SAP_VERILOG --vector_source="C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/Waveform.vwf" --testbench_file="C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/simulation/qsim/Waveform.vwf.vt"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/simulation/qsim/" SAP_VERILOG -c SAP_VERILOG</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/simulation/qsim/" SAP_VERILOG -c SAP_VERILOG</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SAP_VERILOG -c SAP_VERILOG --vector_source="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/Arithmetic.vwf" --testbench_file="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/simulation/qsim/Arithmetic.vwf.vt"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SAP_VERILOG -c SAP_VERILOG --vector_source="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/Arithmetic.vwf" --testbench_file="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/simulation/qsim/Arithmetic.vwf.vt"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/simulation/qsim/" SAP_VERILOG -c SAP_VERILOG</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/Users/kevin/Documents/Sistemas-Embarcados/SAP1-BR - Verilog/SAP_VERILOG/simulation/qsim/" SAP_VERILOG -c SAP_VERILOG</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vlog -work work SAP_VERILOG.vo
@@ -24,7 +24,7 @@ quit -f
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
 vlog -work work SAP_VERILOG.vo
-vlog -work work Waveform.vwf.vt
+vlog -work work Arithmetic.vwf.vt
 vsim -novopt -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.sap_vlg_vec_tst
 vcd file -direction SAP_VERILOG.msim.vcd
 vcd add -internal sap_vlg_vec_tst/*

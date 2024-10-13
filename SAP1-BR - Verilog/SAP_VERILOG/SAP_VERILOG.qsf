@@ -55,7 +55,6 @@ set_global_assignment -name VERILOG_FILE ci173_registrador_tristate_4bits.v
 set_global_assignment -name VERILOG_FILE ci244_octaBuffer_tristate.v
 set_global_assignment -name VERILOG_FILE acumulador.v
 set_global_assignment -name VERILOG_FILE contador_de_programa.v
-set_global_assignment -name VERILOG_FILE Contador_sincrono_32bits.v
 set_global_assignment -name VERILOG_FILE controller.v
 set_global_assignment -name VERILOG_FILE DEMUX.v
 set_global_assignment -name VERILOG_FILE flip_flop_D.v
@@ -64,11 +63,10 @@ set_global_assignment -name VERILOG_FILE registrador_B.v
 set_global_assignment -name VERILOG_FILE registrador_de_instrucoes.v
 set_global_assignment -name VERILOG_FILE registrador_de_saida.v
 set_global_assignment -name VERILOG_FILE registrador_mar.v
-set_global_assignment -name VERILOG_FILE testeMUX.v
 set_global_assignment -name VERILOG_FILE ula.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE Arithmetic.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Logic.vwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
