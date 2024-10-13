@@ -1,0 +1,593 @@
+Analysis & Synthesis report for SAP_VERILOG
+Sun Oct 13 14:22:55 2024
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Port Connectivity Checks: "acumulador:acumulador|ci173_registrador_tristate_4bits:ci173_2"
+ 12. Port Connectivity Checks: "acumulador:acumulador|ci173_registrador_tristate_4bits:ci173_1"
+ 13. Port Connectivity Checks: "registrador_B:registrador_B|ci173_registrador_tristate_4bits:ci173_2"
+ 14. Port Connectivity Checks: "registrador_B:registrador_B|ci173_registrador_tristate_4bits:ci173_1"
+ 15. Port Connectivity Checks: "registrador_de_saida:registrador_de_saida|ci173_registrador_tristate_4bits:ci173_2"
+ 16. Port Connectivity Checks: "registrador_de_saida:registrador_de_saida|ci173_registrador_tristate_4bits:ci173_1"
+ 17. Port Connectivity Checks: "registrador_de_instrucoes:registrador_de_instrucoes|ci244_octaBuffer_tristate:buffer"
+ 18. Port Connectivity Checks: "registrador_de_instrucoes:registrador_de_instrucoes|ci173_registrador_tristate_4bits:ci173_2"
+ 19. Port Connectivity Checks: "registrador_de_instrucoes:registrador_de_instrucoes|ci173_registrador_tristate_4bits:ci173_1"
+ 20. Port Connectivity Checks: "registrador_de_instrucoes:registrador_de_instrucoes"
+ 21. Port Connectivity Checks: "registrador_mar:registrador_mar|ci173_registrador_tristate_4bits:ci173_1"
+ 22. Port Connectivity Checks: "registrador_mar:registrador_mar"
+ 23. Port Connectivity Checks: "contador_de_programa:contador_de_programa|ci244_octaBuffer_tristate:buffer"
+ 24. Port Connectivity Checks: "contador_de_programa:contador_de_programa"
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
+ 28. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Oct 13 14:22:55 2024       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; SAP_VERILOG                                 ;
+; Top-level Entity Name              ; sap                                         ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 386                                         ;
+;     Total combinational functions  ; 310                                         ;
+;     Dedicated logic registers      ; 188                                         ;
+; Total registers                    ; 188                                         ;
+; Total pins                         ; 24                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; sap                ; SAP_VERILOG        ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 8           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                          ;
++------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path   ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                          ; Library ;
++------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
+; sap.v                              ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v                              ;         ;
+; ci157_MUX.v                        ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci157_MUX.v                        ;         ;
+; ci161_Contador_sincrono.v          ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci161_Contador_sincrono.v          ;         ;
+; ci173_registrador_tristate_4bits.v ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci173_registrador_tristate_4bits.v ;         ;
+; ci244_octaBuffer_tristate.v        ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci244_octaBuffer_tristate.v        ;         ;
+; acumulador.v                       ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/acumulador.v                       ;         ;
+; contador_de_programa.v             ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/contador_de_programa.v             ;         ;
+; controller.v                       ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/controller.v                       ;         ;
+; memoria_ram.v                      ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/memoria_ram.v                      ;         ;
+; registrador_B.v                    ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_B.v                    ;         ;
+; registrador_de_instrucoes.v        ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_de_instrucoes.v        ;         ;
+; registrador_de_saida.v             ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_de_saida.v             ;         ;
+; registrador_mar.v                  ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_mar.v                  ;         ;
+; ula.v                              ; yes             ; User Verilog HDL File  ; C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ula.v                              ;         ;
++------------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                              ;
++---------------------------------------------+----------------------------+
+; Resource                                    ; Usage                      ;
++---------------------------------------------+----------------------------+
+; Estimated Total logic elements              ; 386                        ;
+;                                             ;                            ;
+; Total combinational functions               ; 310                        ;
+; Logic element usage by number of LUT inputs ;                            ;
+;     -- 4 input functions                    ; 170                        ;
+;     -- 3 input functions                    ; 36                         ;
+;     -- <=2 input functions                  ; 104                        ;
+;                                             ;                            ;
+; Logic elements by mode                      ;                            ;
+;     -- normal mode                          ; 299                        ;
+;     -- arithmetic mode                      ; 11                         ;
+;                                             ;                            ;
+; Total registers                             ; 188                        ;
+;     -- Dedicated logic registers            ; 188                        ;
+;     -- I/O registers                        ; 0                          ;
+;                                             ;                            ;
+; I/O pins                                    ; 24                         ;
+;                                             ;                            ;
+; Embedded Multiplier 9-bit elements          ; 0                          ;
+;                                             ;                            ;
+; Maximum fan-out node                        ; memoria_ram:memoria_ram|WE ;
+; Maximum fan-out                             ; 128                        ;
+; Total fan-out                               ; 1553                       ;
+; Average fan-out                             ; 2.84                       ;
++---------------------------------------------+----------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                 ;
++----------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------+----------------------------------+--------------+
+; Compilation Hierarchy Node                               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                               ; Entity Name                      ; Library Name ;
++----------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------+----------------------------------+--------------+
+; |sap                                                     ; 310 (63)            ; 188 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 24   ; 0            ; 0          ; |sap                                                                                              ; sap                              ; work         ;
+;    |acumulador:acumulador|                               ; 0 (0)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|acumulador:acumulador                                                                        ; acumulador                       ; work         ;
+;       |ci173_registrador_tristate_4bits:ci173_1|         ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|acumulador:acumulador|ci173_registrador_tristate_4bits:ci173_1                               ; ci173_registrador_tristate_4bits ; work         ;
+;       |ci173_registrador_tristate_4bits:ci173_2|         ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|acumulador:acumulador|ci173_registrador_tristate_4bits:ci173_2                               ; ci173_registrador_tristate_4bits ; work         ;
+;    |contador_de_programa:contador_de_programa|           ; 4 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|contador_de_programa:contador_de_programa                                                    ; contador_de_programa             ; work         ;
+;       |ci161_Contador_sincrono:contador|                 ; 4 (4)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|contador_de_programa:contador_de_programa|ci161_Contador_sincrono:contador                   ; ci161_Contador_sincrono          ; work         ;
+;    |controller:controller|                               ; 38 (38)             ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|controller:controller                                                                        ; controller                       ; work         ;
+;    |memoria_ram:memoria_ram|                             ; 180 (180)           ; 128 (128)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|memoria_ram:memoria_ram                                                                      ; memoria_ram                      ; work         ;
+;    |registrador_B:registrador_B|                         ; 0 (0)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|registrador_B:registrador_B                                                                  ; registrador_B                    ; work         ;
+;       |ci173_registrador_tristate_4bits:ci173_1|         ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|registrador_B:registrador_B|ci173_registrador_tristate_4bits:ci173_1                         ; ci173_registrador_tristate_4bits ; work         ;
+;       |ci173_registrador_tristate_4bits:ci173_2|         ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|registrador_B:registrador_B|ci173_registrador_tristate_4bits:ci173_2                         ; ci173_registrador_tristate_4bits ; work         ;
+;    |registrador_de_instrucoes:registrador_de_instrucoes| ; 0 (0)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|registrador_de_instrucoes:registrador_de_instrucoes                                          ; registrador_de_instrucoes        ; work         ;
+;       |ci173_registrador_tristate_4bits:ci173_1|         ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|registrador_de_instrucoes:registrador_de_instrucoes|ci173_registrador_tristate_4bits:ci173_1 ; ci173_registrador_tristate_4bits ; work         ;
+;       |ci173_registrador_tristate_4bits:ci173_2|         ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|registrador_de_instrucoes:registrador_de_instrucoes|ci173_registrador_tristate_4bits:ci173_2 ; ci173_registrador_tristate_4bits ; work         ;
+;    |registrador_de_saida:registrador_de_saida|           ; 0 (0)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|registrador_de_saida:registrador_de_saida                                                    ; registrador_de_saida             ; work         ;
+;       |ci173_registrador_tristate_4bits:ci173_1|         ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|registrador_de_saida:registrador_de_saida|ci173_registrador_tristate_4bits:ci173_1           ; ci173_registrador_tristate_4bits ; work         ;
+;       |ci173_registrador_tristate_4bits:ci173_2|         ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|registrador_de_saida:registrador_de_saida|ci173_registrador_tristate_4bits:ci173_2           ; ci173_registrador_tristate_4bits ; work         ;
+;    |registrador_mar:registrador_mar|                     ; 4 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|registrador_mar:registrador_mar                                                              ; registrador_mar                  ; work         ;
+;       |ci157_MUX:ci157_1|                                ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|registrador_mar:registrador_mar|ci157_MUX:ci157_1                                            ; ci157_MUX                        ; work         ;
+;       |ci173_registrador_tristate_4bits:ci173_1|         ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|registrador_mar:registrador_mar|ci173_registrador_tristate_4bits:ci173_1                     ; ci173_registrador_tristate_4bits ; work         ;
+;    |ula:ula|                                             ; 21 (21)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |sap|ula:ula                                                                                      ; ula                              ; work         ;
++----------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------+----------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++---------------------------------------+-----------------------------------------+
+; Register name                         ; Reason for Removal                      ;
++---------------------------------------+-----------------------------------------+
+; controller:controller|PC_INC          ; Merged with controller:controller|IR_IN ;
+; Total Number of Removed Registers = 1 ;                                         ;
++---------------------------------------+-----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 188   ;
+; Number of registers using Synchronous Clear  ; 10    ;
+; Number of registers using Synchronous Load   ; 4     ;
+; Number of registers using Asynchronous Clear ; 40    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 164   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |sap|controller:controller|HLT         ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |sap|controller:controller|contador[0] ;
+; 18:1               ; 4 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; No         ; |sap|bus[4]                            ;
+; 20:1               ; 4 bits    ; 52 LEs        ; 28 LEs               ; 24 LEs                 ; No         ; |sap|bus[0]                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "acumulador:acumulador|ci173_registrador_tristate_4bits:ci173_2"                                                                                                                                 ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; enable_output     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; enable_output[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; FD                ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "acumulador:acumulador|ci173_registrador_tristate_4bits:ci173_1"                                                                                                                                 ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; enable_output     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; enable_output[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; FD                ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "registrador_B:registrador_B|ci173_registrador_tristate_4bits:ci173_2"                                                                                                                           ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; enable_output     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; enable_output[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; FD                ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
+; Q_OUT             ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "registrador_B:registrador_B|ci173_registrador_tristate_4bits:ci173_1"                                                                                                                           ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; enable_output     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; enable_output[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; FD                ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
+; Q_OUT             ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "registrador_de_saida:registrador_de_saida|ci173_registrador_tristate_4bits:ci173_2"                                                                                                             ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; enable_output     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; enable_output[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; FD                ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
+; Q_ULA             ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "registrador_de_saida:registrador_de_saida|ci173_registrador_tristate_4bits:ci173_1"                                                                                                             ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; enable_output     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; enable_output[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; FD                ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
+; Q_ULA             ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "registrador_de_instrucoes:registrador_de_instrucoes|ci244_octaBuffer_tristate:buffer"                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                   ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; A    ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "A[7..4]" will be connected to GND. ;
+; S    ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (4 bits) it drives; bit(s) "S[7..4]" have no fanouts                      ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "registrador_de_instrucoes:registrador_de_instrucoes|ci173_registrador_tristate_4bits:ci173_2"                                                                                                   ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; enable_output     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; enable_output[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; FD                ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
+; Q_ULA             ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "registrador_de_instrucoes:registrador_de_instrucoes|ci173_registrador_tristate_4bits:ci173_1"                                                                                                   ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; enable_output     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; enable_output[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; FD                ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
+; Q_ULA             ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "registrador_de_instrucoes:registrador_de_instrucoes"                                                                                                                     ;
++---------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                                                               ;
++---------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; bus_out ; Output ; Warning  ; Output or bidir port (4 bits) is smaller than the port expression (8 bits) it drives.  The 4 most-significant bit(s) in the port expression will be connected to GND. ;
++---------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "registrador_mar:registrador_mar|ci173_registrador_tristate_4bits:ci173_1"                                                                                                                       ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; enable_output     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; enable_output[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; FD                ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
+; Q_ULA             ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "registrador_mar:registrador_mar"                                                                                                                                                 ;
++-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                          ;
++-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; mar_b ; Input ; Warning  ; Input port expression (8 bits) is wider than the input port (4 bits) it drives.  The 4 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador_de_programa:contador_de_programa|ci244_octaBuffer_tristate:buffer"                                                               ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                   ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; A    ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "A[7..4]" will be connected to GND. ;
+; S    ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (4 bits) it drives; bit(s) "S[7..4]" have no fanouts                      ;
++------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "contador_de_programa:contador_de_programa"                                                                                                                                          ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                                                                          ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; bus_in  ; Input  ; Warning  ; Input port expression (8 bits) is wider than the input port (4 bits) it drives.  The 4 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; bus_out ; Output ; Warning  ; Output or bidir port (4 bits) is smaller than the port expression (8 bits) it drives.  The 4 most-significant bit(s) in the port expression will be connected to GND.            ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 24                          ;
+; cycloneiii_ff         ; 188                         ;
+;     CLR SLD           ; 4                           ;
+;     ENA               ; 128                         ;
+;     ENA CLR           ; 36                          ;
+;     SCLR              ; 10                          ;
+;     plain             ; 10                          ;
+; cycloneiii_lcell_comb ; 310                         ;
+;     arith             ; 11                          ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 8                           ;
+;     normal            ; 299                         ;
+;         1 data inputs ; 73                          ;
+;         2 data inputs ; 28                          ;
+;         3 data inputs ; 28                          ;
+;         4 data inputs ; 170                         ;
+;                       ;                             ;
+; Max LUT depth         ; 9.00                        ;
+; Average LUT depth     ; 6.19                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Sun Oct 13 14:22:40 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SAP_VERILOG -c SAP_VERILOG
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file sap.v
+    Info (12023): Found entity 1: sap File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ci157.v
+    Info (12023): Found entity 1: ci157 File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci157.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ci157_mux.v
+    Info (12023): Found entity 1: ci157_MUX File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci157_MUX.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ci161_contador_sincrono.v
+    Info (12023): Found entity 1: ci161_Contador_sincrono File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci161_Contador_sincrono.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ci173_registrador_tristate_4bits.v
+    Info (12023): Found entity 1: ci173_registrador_tristate_4bits File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci173_registrador_tristate_4bits.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ci244_octabuffer_tristate.v
+    Info (12023): Found entity 1: ci244_octaBuffer_tristate File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci244_octaBuffer_tristate.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file acumulador.v
+    Info (12023): Found entity 1: acumulador File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/acumulador.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file contador_de_programa.v
+    Info (12023): Found entity 1: contador_de_programa File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/contador_de_programa.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file contador_sincrono_32bits.v
+    Info (12023): Found entity 1: Contador_sincrono_32bits File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/Contador_sincrono_32bits.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file controller.v
+    Info (12023): Found entity 1: controller File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/controller.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file demux.v
+    Info (12023): Found entity 1: DEMUX File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/DEMUX.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flip_flop_d.v
+    Info (12023): Found entity 1: flip_flop_D File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/flip_flop_D.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file memoria_ram.v
+    Info (12023): Found entity 1: memoria_ram File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/memoria_ram.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file registrador_b.v
+    Info (12023): Found entity 1: registrador_B File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_B.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file registrador_de_instrucoes.v
+    Info (12023): Found entity 1: registrador_de_instrucoes File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_de_instrucoes.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file registrador_de_saida.v
+    Info (12023): Found entity 1: registrador_de_saida File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_de_saida.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file registrador_mar.v
+    Info (12023): Found entity 1: registrador_mar File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_mar.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file testemux.v
+    Info (12023): Found entity 1: testeMUX File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/testeMUX.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file ula.v
+    Info (12023): Found entity 1: ula File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ula.v Line: 1
+Info (12127): Elaborating entity "sap" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at sap.v(24): truncated value with size 32 to match size of target (1) File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 24
+Info (12128): Elaborating entity "controller" for hierarchy "controller:controller" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 49
+Info (12128): Elaborating entity "contador_de_programa" for hierarchy "contador_de_programa:contador_de_programa" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 60
+Info (12128): Elaborating entity "ci161_Contador_sincrono" for hierarchy "contador_de_programa:contador_de_programa|ci161_Contador_sincrono:contador" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/contador_de_programa.v Line: 23
+Info (12128): Elaborating entity "ci244_octaBuffer_tristate" for hierarchy "contador_de_programa:contador_de_programa|ci244_octaBuffer_tristate:buffer" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/contador_de_programa.v Line: 31
+Info (12128): Elaborating entity "registrador_mar" for hierarchy "registrador_mar:registrador_mar" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 71
+Info (12128): Elaborating entity "ci173_registrador_tristate_4bits" for hierarchy "registrador_mar:registrador_mar|ci173_registrador_tristate_4bits:ci173_1" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_mar.v Line: 21
+Info (12128): Elaborating entity "ci157_MUX" for hierarchy "registrador_mar:registrador_mar|ci157_MUX:ci157_1" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/registrador_mar.v Line: 29
+Info (12128): Elaborating entity "registrador_de_instrucoes" for hierarchy "registrador_de_instrucoes:registrador_de_instrucoes" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 82
+Info (12128): Elaborating entity "registrador_de_saida" for hierarchy "registrador_de_saida:registrador_de_saida" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 91
+Info (12128): Elaborating entity "registrador_B" for hierarchy "registrador_B:registrador_B" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 100
+Info (12128): Elaborating entity "acumulador" for hierarchy "acumulador:acumulador" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 111
+Info (12128): Elaborating entity "ula" for hierarchy "ula:ula" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 123
+Info (12128): Elaborating entity "memoria_ram" for hierarchy "memoria_ram:memoria_ram" File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/sap.v Line: 136
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13048): Converted tri-state node "bus[7]" into a selector File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci173_registrador_tristate_4bits.v Line: 9
+    Warning (13048): Converted tri-state node "bus[6]" into a selector File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci173_registrador_tristate_4bits.v Line: 9
+    Warning (13048): Converted tri-state node "bus[5]" into a selector File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci173_registrador_tristate_4bits.v Line: 9
+    Warning (13048): Converted tri-state node "bus[4]" into a selector File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci173_registrador_tristate_4bits.v Line: 9
+    Warning (13048): Converted tri-state node "bus[3]" into a selector File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci161_Contador_sincrono.v Line: 9
+    Warning (13048): Converted tri-state node "bus[2]" into a selector File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci161_Contador_sincrono.v Line: 9
+    Warning (13048): Converted tri-state node "bus[1]" into a selector File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci161_Contador_sincrono.v Line: 9
+    Warning (13048): Converted tri-state node "bus[0]" into a selector File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/ci161_Contador_sincrono.v Line: 9
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/db/SAP_VERILOG.ram0_memoria_ram_2c141c.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276013): RAM logic "memoria_ram:memoria_ram|memoria" is uninferred because MIF is not supported for the selected family File: C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/memoria_ram.v Line: 14
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/db/SAP_VERILOG.ram0_memoria_ram_2c141c.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (12241): 14 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/output_files/SAP_VERILOG.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 426 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 16 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 402 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4801 megabytes
+    Info: Processing ended: Sun Oct 13 14:22:55 2024
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:35
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/kevin/Documents/Intel Quartus/SAP_VERILOG/output_files/SAP_VERILOG.map.smsg.
+
+
