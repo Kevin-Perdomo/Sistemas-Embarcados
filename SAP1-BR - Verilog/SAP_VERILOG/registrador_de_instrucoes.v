@@ -40,8 +40,12 @@ module registrador_de_instrucoes (
 endmodule
 
 /*
-  Este módulo implementa um registrador de instruções de 8 bits, dividido em duas partes de 4 bits.
-  - A entrada `bus_in` é dividida em duas partes: os 4 bits mais significativos e os 4 bits menos significativos.
-  - O sinal `IR_IN` habilita a escrita no registrador, enquanto o sinal `IR_OUT` controla a saída.
-  - As saídas são `bus_out`, que fornece a instrução para um módulo externo, e `reg_i_out`, que fornece os 4 bits mais significativos do registrador de instruções.
+A principal função do registrador de instruções (IR - Instruction Register) é armazenar a instrução que a CPU está prestes a decodificar e executar. 
+Ele garante que a CPU tenha um local dedicado para guardar a instrução enquanto ela é processada.
+
+Este módulo implementa um registrador de instruções de 8 bits, dividido em duas partes de 4 bits.
+- A entrada `bus_in` é dividida em duas partes: os 4 bits mais significativos e os 4 bits menos significativos.
+- O sinal `IR_IN` habilita a escrita no registrador, enquanto o sinal `IR_OUT` controla a saída.
+- As saídas são `bus_out`, que fornece a instrução para um módulo externo, e `reg_i_out`, que fornece os 4 bits 
+  mais significativos do registrador de instruções.
 */

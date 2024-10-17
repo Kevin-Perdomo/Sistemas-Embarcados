@@ -29,8 +29,8 @@ module registrador_B (
 endmodule
 
 /*
-  Este módulo implementa um registrador de 8 bits dividido em dois registradores de 4 bits.
-  - A entrada `bus_in` é dividida em duas partes: os 4 bits mais significativos e os 4 bits menos significativos.
-  - O sinal `BR_IN` habilita a escrita nos registradores.
-  - A saída `TO_ULA` fornece os dados armazenados nos registradores para a Unidade Lógica Aritmética (ULA).
+Este módulo implementa um registrador de 8 bits dividido em dois registradores de 4 bits.
+- A entrada `bus_in` é dividida em duas partes: os 4 bits mais significativos e os 4 bits menos significativos.
+- O sinal `BR_IN` habilita a escrita nos registradores.
+- A saída `TO_ULA` fornece os dados armazenados nos registradores para a Unidade Lógica Aritmética (ULA).
 */

@@ -46,9 +46,13 @@ ci244_octaBuffer_tristate buffer
 endmodule
 
 /* 
-  Este é um módulo acumulador de 8 bits que armazena e fornece dados ao barramento e à ULA (Unidade Lógica e Aritmética).
-  - O módulo contém dois registradores `ci173` (cada um de 4 bits) que formam os 8 bits do acumulador. O sinal `ACC_IN` habilita a entrada de dados do barramento `bus_in` para os registradores.
-  - Um buffer `ci244` octal de três estados controla a saída dos dados armazenados para o barramento `bus_out`, habilitado pelo sinal `ACC_OUT`.
-  - Os dados também são enviados para a ULA através das saídas `TO_ULA`.
-  O acumulador opera de forma síncrona com o sinal de clock, com a capacidade de ser resetado através do sinal `clear`.
+A principal função do acumulador (também conhecido como Accumulator) é armazenar temporariamente o 
+resultado de operações lógicas e aritméticas.
+
+Este é um módulo acumulador de 8 bits que armazena e fornece dados ao barramento e à ULA (Unidade Lógica e Aritmética).
+- O módulo contém dois registradores `ci173` (cada um de 4 bits) que formam os 8 bits do acumulador. 
+- O sinal `ACC_IN` habilita a entrada de dados do barramento `bus_in` para os registradores.
+- Um buffer `ci244` octal de três estados controla a saída dos dados armazenados para o barramento `bus_out`, habilitado pelo sinal `ACC_OUT`.
+- Os dados também são enviados para a ULA através das saídas `TO_ULA`.
+- O acumulador opera de forma síncrona com o sinal de clock, com a capacidade de ser resetado através do sinal `clear`.
 */

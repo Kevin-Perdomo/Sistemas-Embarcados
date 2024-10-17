@@ -139,8 +139,16 @@ endmodule
 
 /* 
 Este módulo implementa um Sistema Aritmético e Lógico (SAP) que combina diversos componentes 
-para realizar operações aritméticas e lógicas. O sistema inclui um contador de programa, 
-registradores de memória e instruções, um acumulador, uma ULA e uma memória RAM. Os sinais de controle 
-gerenciam as operações, permitindo que o sistema leia, escreva e execute instruções com base em um clock 
-e um sinal de reset. A saída final do sistema é fornecida na porta SAP_OUT.
+para realizar operações lógicas e aritméticas. 
+
+O sistema inclui: 
+Contador de programa;
+Registradores de memória, instruções e acumulador;
+Unidade Lógica e Aritmética (ULA);
+Memória RAM;
+
+Os sinais de controle gerenciam as operações, permitindo que o sistema leia, escreva e execute instruções com base em um clock 
+e um sinal de reset. 
+
+A saída final do sistema é fornecida na porta SAP_OUT.
 */

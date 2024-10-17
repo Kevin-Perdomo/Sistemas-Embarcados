@@ -29,8 +29,11 @@ module registrador_de_saida (
 endmodule
 
 /*
-  Este módulo implementa um registrador de saída de 8 bits, dividido em duas partes de 4 bits.
-  - A entrada `bus_in` é dividida em duas partes: os 4 bits mais significativos e os 4 bits menos significativos.
-  - O sinal `OPR_IN` habilita a escrita no registrador.
-  - A saída `OUT_BUS` fornece os dados armazenados no registrador para um módulo externo.
+A principal função do registrador de saída (também conhecido como Output Register) é armazenar temporariamente os dados 
+que estão prestes a ser enviados para os dispositivos de saída.
+
+Este módulo implementa um registrador de saída de 8 bits, dividido em duas partes de 4 bits.
+- A entrada `bus_in` é dividida em duas partes: os 4 bits mais significativos e os 4 bits menos significativos.
+- O sinal `OPR_IN` habilita a escrita no registrador.
+- A saída `OUT_BUS` fornece os dados armazenados no registrador para um módulo externo.
 */

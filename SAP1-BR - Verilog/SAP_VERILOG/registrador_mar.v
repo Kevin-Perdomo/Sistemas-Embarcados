@@ -31,9 +31,12 @@ module registrador_mar (
 endmodule
 
 /*
-  O módulo registrador_mar implementa um registrador de endereço de 4 bits (MAR).
-  - Ele recebe um sinal de clock e um sinal de limpeza para controlar seu funcionamento.
-  - O sinal `MAR_IN` habilita a escrita no registrador.
-  - A seleção entre os dados de entrada (mar_dip) e os dados armazenados no registrador (w_173_to_157) é feita pelo sinal `programm_run` através de um MUX.
-  - O resultado final é disponibilizado na saída `addr`.
+O registrador MAR (do inglês Memory Address Register) tem a função de armazenar o endereço de memória que a CPU precisa acessar, 
+seja para ler ou escrever dados.
+
+O módulo registrador_mar implementa um registrador de endereço de 4 bits (MAR).
+- Ele recebe um sinal de clock e um sinal de limpeza para controlar seu funcionamento.
+- O sinal `MAR_IN` habilita a escrita no registrador.
+- A seleção entre os dados de entrada (mar_dip) e os dados armazenados no registrador (w_173_to_157) é feita pelo sinal `programm_run` através de um MUX.
+- O resultado final é disponibilizado na saída `addr`.
 */

@@ -33,10 +33,13 @@ ci244_octaBuffer_tristate buffer
 endmodule
 
 /* 
-  Este módulo representa um contador de programa de 4 bits que pode ser incrementado ou carregado com um novo valor.
-  - O contador é sincronizado com o sinal de clock e pode ser incrementado quando o sinal `PC_INC` está ativo. 
-  - O sinal `jump` permite carregar um novo valor do barramento `bus_in` no contador. 
-  - O sinal `clear` reseta o contador para zero.
-  - A saída do contador é controlada pelo sinal `PC_OUT` e é disponibilizada no barramento `bus_out` através de um buffer de três estados.
-  O contador é projetado para uso em um sistema de controle, como um processador ou microcontrolador.
+ O contador de programa armazena o endereço da próxima instrução que será executada. 
+ Assim, ele controla a ordem de execução das instruções no programa. 
+ A cada ciclo de execução, o valor do Program Counter (PC) é atualizado, apontando para a próxima instrução na memória.
+
+Este módulo representa um contador de programa de 4 bits que pode ser incrementado ou carregado com um novo valor.
+- O contador é sincronizado com o sinal de clock e pode ser incrementado quando o sinal `PC_INC` está ativo. 
+- O sinal `jump` permite carregar um novo valor do barramento `bus_in` no contador. 
+- O sinal `clear` reseta o contador para zero.
+- A saída do contador é controlada pelo sinal `PC_OUT` e é disponibilizada no barramento `bus_out` através de um buffer de três estados.
 */

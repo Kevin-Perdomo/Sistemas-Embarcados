@@ -27,13 +27,24 @@ always @(*) begin
 end
 
 // Atribui o resultado à saída S ou coloca em alta impedância se ALU_OUT não estiver ativo
-assign S = ALU_OUT ? result : 8'bz;
+assign S = ALU_OUT ? result : 8'bz;   // Operador Ternário
 
 endmodule
 
 /* 
+A função da ULA (Unidade Lógica e Aritmética) é realizar operações lógicas e aritméticas sobre os dados processados pela CPU.
+
 Este módulo representa uma Unidade Lógica Aritmética (ULA) que realiza operações aritméticas e lógicas 
-em dois operandos de 8 bits (A e B). As operações disponíveis incluem adição, subtração, AND, OR, 
-XOR e NOT, selecionadas através de sinais de controle. O resultado da operação é enviado para a saída 
-S, que pode ser colocada em alta impedância dependendo do sinal de controle ALU_OUT.
+em dois operandos de 8 bits (A e B). 
+
+As operações disponíveis incluem: 
+adição; 
+subtração;
+AND;
+OR;
+XOR;
+NOT;
+
+As operações são selecionadas através de sinais de controle. 
+O resultado da operação é enviado para a saída S, que pode ser colocada em alta impedância dependendo do sinal de controle ALU_OUT.
 */
